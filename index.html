@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sparkles by Siraa | Fine Jewellery in the UAE</title>
+<meta name="description" content="Shop Sparkles by Siraa rings, necklaces, earrings and bracelets with free delivery across the UAE. Pay by card or cash on delivery.">
+<meta name="theme-color" content="#4a3829">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
+<style>
+:root{--emerald:#4a3829;--emerald-2:#5c4636;--gold:#c9a46c;--gold-deep:#7a5a3c;--gold-soft:#f1e4cf;--ivory:#f7f4ef;--pearl:#f3ece2;--ink:#2b221b;--mute:#5a4c40;--line:rgba(74,56,41,.2);--err:#b23b55;--rose:#efe3d3;--lav:#e6d7c3;--mint:#e0cfba;--sky:#ebdfd0;--peach:#f1e4cf;
+--serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Helvetica Neue",Arial,sans-serif;--nav:88px;color-scheme:light}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(var(--nav) + 20px)}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.7;display:flex;flex-direction:column;min-height:100vh;-webkit-font-smoothing:antialiased}
+a{color:inherit}img,svg{display:block;max-width:100%}button{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;line-height:1.08}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+[hidden]{display:none!important}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto}.narrow{width:min(780px,100% - 48px);margin-inline:auto}
+.ann{background:var(--emerald);color:var(--gold-soft);text-align:center;font-size:13px;letter-spacing:.06em;padding:8px 12px}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{height:var(--nav);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.brand b{font-family:var(--serif);font-weight:600;font-size:32px;letter-spacing:.14em;color:var(--emerald)}
+.brand small{font-size:10px;letter-spacing:.38em;color:var(--gold-deep);margin-top:4px}
+.menu{display:flex;gap:34px;list-style:none;margin:0;padding:0}
+.menu a{text-decoration:none;font-size:15px;padding:6px 0;border-bottom:1px solid transparent}
+.menu a:hover,.menu a[aria-current]{border-color:var(--gold)}
+.nav-r{display:flex;align-items:center;gap:16px}
+.cart{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--emerald)}
+.cart svg{width:24px;height:24px}
+.badge{min-width:20px;height:20px;border-radius:10px;background:var(--emerald);color:var(--gold-soft);font-size:12px;line-height:20px;text-align:center;padding:0 6px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;font-size:26px;color:var(--emerald)}
+main{flex:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:15px 30px;border:1px solid var(--emerald);background:var(--emerald);color:var(--ivory);cursor:pointer;transition:background .25s,color .25s}
+.btn:hover{background:transparent;color:var(--emerald)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:var(--emerald)}.btn.gold:hover{background:transparent;color:var(--gold-deep)}
+.btn.line{background:transparent;color:var(--emerald)}.btn.line:hover{background:var(--emerald);color:var(--ivory)}
+.btn.block{width:100%}.btn[disabled]{opacity:.5;cursor:not-allowed}
+.link{background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:4px;color:inherit}
+/* hero */
+.hero{background:radial-gradient(120% 90% at 78% 40%,var(--emerald-2) 0%,var(--emerald) 62%);color:var(--ivory);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;min-height:min(80vh,680px);padding:56px 0}
+.hero h1{font-size:clamp(46px,6.4vw,92px);font-weight:400;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero p{max-width:34ch;color:#e6dccd;margin:22px 0 32px;font-size:17px}
+.hero .btn{background:var(--gold);border-color:var(--gold);color:var(--emerald)}.hero .btn:hover{background:transparent;color:var(--gold-soft)}
+.gem{width:min(460px,100%);margin-inline:auto;filter:drop-shadow(0 30px 50px rgba(0,0,0,.45))}
+@media(prefers-reduced-motion:no-preference){.gem .sp{animation:tw 3.2s ease-in-out infinite;transform-origin:center;transform-box:fill-box}.gem .sp:nth-of-type(2){animation-delay:1.1s}.gem .sp:nth-of-type(3){animation-delay:2s}@keyframes tw{50%{opacity:.15;transform:scale(.6)}}}
+.trust{background:var(--pearl);border-block:1px solid var(--line)}
+.trust ul{list-style:none;margin:0;padding:22px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.trust strong{display:block;font-family:var(--serif);font-size:21px;font-weight:500;color:var(--emerald)}.trust span{font-size:14px;color:var(--mute)}
+.section{padding:clamp(60px,9vw,120px) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:clamp(30px,5vw,56px)}
+.sec-head h2{font-size:clamp(34px,4.6vw,58px)}.sec-head p{margin:0;color:var(--mute);max-width:34ch}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat{text-decoration:none;text-align:center;padding:28px 12px 22px;background:var(--pearl);border:1px solid var(--line);transition:border-color .3s}
+.cat:hover{border-color:var(--gold)}.cat svg{width:100%;aspect-ratio:1;max-width:150px;margin:0 auto 10px}.cat h3{font-size:26px}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:34px 22px}
+.card{display:block;text-decoration:none;position:relative}
+.card .ph{position:relative;aspect-ratio:1/1.1;background:radial-gradient(circle at 50% 38%,#fff 0%,var(--pearl) 100%);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.card .ph svg{width:72%;transition:transform .6s}.card:hover .ph svg{transform:scale(1.07) rotate(-2deg)}
+.card.oos .ph svg{opacity:.4}
+.tag{position:absolute;top:12px;left:12px;background:var(--emerald);color:var(--gold-soft);font-size:11px;letter-spacing:.14em;padding:5px 11px;text-transform:uppercase}
+.tag.low{left:auto;right:12px;background:#8a3a2a;color:#fff}
+.card .meta{display:flex;justify-content:space-between;gap:12px;padding-top:14px;align-items:baseline}
+.card h3{font-size:25px}.card p{margin:4px 0 0;font-size:14.5px;color:var(--mute);line-height:1.5}
+.pbox{display:flex;flex-direction:column;align-items:flex-end;white-space:nowrap;line-height:1.25}
+.pbox s{font-size:13px;color:var(--mute)}.pbox .off{font-size:11px;color:var(--gold-deep);border:1px solid var(--gold);padding:1px 6px;margin-top:3px}
+.stock{display:block;margin-top:6px;font-size:13px;color:var(--gold-deep)}.stock.low{color:#8a3a2a;font-weight:500}.stock.oos{color:var(--err)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;padding-bottom:22px;margin-bottom:34px;border-bottom:1px solid var(--line)}
+.filters button{cursor:pointer;background:none;border:1px solid var(--line);padding:9px 20px;font-size:14px;letter-spacing:.08em}
+.filters button:hover{border-color:var(--gold)}.filters button[aria-pressed=true]{background:var(--emerald);color:var(--gold-soft);border-color:var(--emerald)}
+.page-head{padding:clamp(40px,6vw,76px) 0 28px}.page-head h1{font-size:clamp(42px,6vw,80px)}.page-head p{color:var(--mute);margin:14px 0 0;max-width:52ch}
+.crumbs{font-size:14px;color:var(--mute);margin-bottom:20px}.crumbs span{margin:0 8px}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:s}
+.steps li{counter-increment:s;border-top:1px solid var(--gold);padding-top:18px}
+.steps li::before{content:counter(s);display:block;font-family:var(--serif);font-size:42px;color:var(--gold);line-height:1;margin-bottom:10px}
+.steps h3{font-size:23px;margin-bottom:6px}.steps p{margin:0;font-size:15px;color:var(--mute)}
+.story{background:var(--emerald);color:var(--ivory)}.story .wrap{padding:clamp(70px,10vw,130px) 0;max-width:820px}
+.story h2{font-size:clamp(34px,5vw,64px);font-weight:400}.story p{color:#e6dccd;margin:22px 0 0;max-width:46ch}
+/* product page */
+.pdp{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,70px);align-items:start;padding-bottom:80px}
+.pdp .ph{position:sticky;top:calc(var(--nav) + 20px);aspect-ratio:1/1.05;background:radial-gradient(circle at 50% 40%,#fff,var(--pearl));border:1px solid var(--line);display:grid;place-items:center}
+.pdp .ph svg{width:74%}.pdp h1{font-size:clamp(38px,4.4vw,62px)}
+.pdp .pbox{flex-direction:row;align-items:center;gap:12px;margin-top:12px;font-size:24px}.pdp .pbox s{font-size:18px}
+.short{color:var(--mute);margin:18px 0 0;max-width:48ch}
+.opt{margin-top:28px}.opt-l{display:flex;justify-content:space-between;font-size:15px;margin-bottom:10px}
+.sizes{display:flex;flex-wrap:wrap;gap:10px;border:0;padding:0;margin:0}.sizes label{position:relative}
+.sizes input{position:absolute;inset:0;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+.sizes span{display:grid;place-items:center;min-width:54px;height:46px;padding:0 14px;border:1px solid var(--line);background:#fff;cursor:pointer}
+.sizes input:checked+span{background:var(--emerald);color:var(--gold-soft);border-color:var(--emerald)}
+.sizes input:focus-visible+span{outline:2px solid var(--gold);outline-offset:3px}
+.sizes .un span{opacity:.4;text-decoration:line-through;cursor:not-allowed}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);background:#fff}
+.qty button{width:44px;height:44px;background:none;border:0;cursor:pointer;font-size:22px}.qty output{min-width:36px;text-align:center}
+.buy{display:grid;gap:12px;margin-top:28px}
+.assure{list-style:none;margin:26px 0 0;padding:18px 0 0;border-top:1px solid var(--line);display:grid;gap:6px;font-size:15px;color:var(--mute)}
+.assure li::before{content:"";display:inline-block;width:6px;height:6px;border:1px solid var(--gold);transform:rotate(45deg);margin-right:12px}
+details.acc{border-top:1px solid var(--line)}details.acc:last-of-type{border-bottom:1px solid var(--line)}
+details.acc summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;padding:18px 0;font-family:var(--serif);font-size:23px}
+details.acc summary::-webkit-details-marker{display:none}details.acc summary::after{content:"+";color:var(--gold-deep)}details.acc[open] summary::after{content:"\2212"}
+details.acc .body{padding:0 0 18px;color:var(--mute)}details.acc .body p{margin:0}
+.err{color:var(--err);font-size:14px;margin:6px 0 0}
+/* cart / forms */
+.grid2{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr);gap:clamp(28px,5vw,64px);align-items:start;padding-bottom:90px}
+.line{display:grid;grid-template-columns:90px 1fr auto;gap:18px;padding:20px 0;border-top:1px solid var(--line)}
+.line:last-of-type{border-bottom:1px solid var(--line)}
+.thumb{aspect-ratio:1;background:var(--pearl);border:1px solid var(--line);display:grid;place-items:center}.thumb svg{width:80%}
+.line h3{font-size:24px}.line .sub{color:var(--mute);font-size:14.5px;margin:4px 0 10px}.rm{font-size:14px;color:var(--mute);margin-left:14px}
+.summary{background:var(--pearl);border:1px solid var(--line);padding:26px;position:sticky;top:calc(var(--nav) + 20px)}
+.summary h2{font-size:28px;margin-bottom:14px}.sr{display:flex;justify-content:space-between;gap:14px;padding:6px 0}
+.sr.t{border-top:1px solid var(--line);margin-top:8px;padding-top:14px;font-size:19px}
+.mini{display:grid;grid-template-columns:48px 1fr auto;gap:12px;align-items:center;padding:6px 0;font-size:14.5px}.mini .thumb{width:48px}.mini small{display:block;color:var(--mute)}
+.note{font-size:14px;color:var(--mute);margin:12px 0 18px}
+.notice{border-left:2px solid var(--gold);background:var(--pearl);padding:14px 18px;margin:0 0 28px;font-size:15px}
+fieldset{border:0;padding:0;margin:0 0 36px}legend{font-family:var(--serif);font-size:29px;padding:0;margin-bottom:6px}
+.hint{color:var(--mute);font-size:14.5px;margin:0 0 18px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px}.f{display:flex;flex-direction:column;gap:6px}.f.full{grid-column:1/-1}
+.f label{font-size:15px}.f label i{font-style:normal;color:var(--mute);font-size:13px}
+.f input,.f select,.f textarea{font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1px solid var(--line);padding:13px 15px;border-radius:0;width:100%}
+.f textarea{min-height:96px;resize:vertical}.f [aria-invalid=true]{border-color:var(--err)}
+.pay{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);background:#fff;padding:18px;cursor:pointer;margin-bottom:10px}
+.pay input{margin-top:6px;accent-color:var(--emerald);width:18px;height:18px}.pay strong{display:block;font-family:var(--serif);font-weight:500;font-size:23px;line-height:1.2}.pay span{color:var(--mute);font-size:14.5px}
+.pay:has(input:checked){border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:15px;margin-bottom:8px;cursor:pointer}.check input{margin-top:5px;accent-color:var(--emerald);width:18px;height:18px}
+.empty{text-align:center;padding:clamp(60px,9vw,110px) 0}.empty h1{font-size:clamp(38px,5vw,60px)}.empty p{color:var(--mute);margin:12px auto 26px;max-width:40ch}
+.done h1{font-size:clamp(38px,5.4vw,74px)}.orderid{display:inline-block;margin-top:22px;border:1px solid var(--gold);padding:8px 18px;letter-spacing:.14em}
+.box{background:var(--pearl);border:1px solid var(--line);padding:24px;margin-top:28px}.box h2{font-size:27px;margin-bottom:12px}
+.box dl{margin:0;display:grid;grid-template-columns:150px 1fr;gap:8px 18px}.box dt{color:var(--mute)}.box dd{margin:0}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin:24px 0}
+.prose h2{font-size:30px;margin:38px 0 10px}.prose a{color:var(--gold-deep)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:56px}.ccard{border:1px solid var(--line);background:#fff;padding:24px}.ccard h3{font-size:25px;margin-bottom:6px}.ccard p{margin:0 0 4px;color:var(--mute);overflow-wrap:anywhere}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,80px);padding-bottom:90px;align-items:start}
+footer{background:var(--emerald);color:#e6dccd;padding:56px 0 0;font-size:15px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1.4fr;gap:40px;padding-bottom:44px}
+footer h4{font-family:var(--serif);font-weight:500;font-size:22px;color:var(--gold-soft);margin:0 0 14px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}footer a{text-decoration:none}footer a:hover{color:var(--gold-soft)}
+footer .brand b{color:var(--gold-soft);font-size:38px}footer .brand small{color:#e6dccd}footer li b{font-weight:400;color:var(--gold-soft);display:inline-block;min-width:78px}
+.fbar{border-top:1px solid rgba(227,207,166,.22);padding:20px 0 24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px}.fbar nav{display:flex;gap:20px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,30px);opacity:0;pointer-events:none;background:var(--emerald);color:var(--ivory);border:1px solid var(--gold);padding:13px 20px;z-index:80;transition:all .35s;max-width:calc(100% - 32px);font-size:15px}
+.toast.show{opacity:1;transform:translate(-50%,0);pointer-events:auto}.toast a{color:var(--gold-soft)}
+@media print{.nav,footer,.toast,.ann{display:none!important}}
+@media(max-width:960px){.cards,.cats,.steps,.trust ul{grid-template-columns:repeat(2,minmax(0,1fr))}.fgrid{grid-template-columns:1fr 1fr}.hero .wrap{grid-template-columns:1fr;min-height:0}.gem{width:min(300px,70%);order:-1}}
+@media(max-width:820px){.burger{display:block}.menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--ivory);border-bottom:1px solid var(--line);padding:6px 24px 14px;display:none}.menu.open{display:flex}.menu a{display:block;padding:14px 0;font-size:18px}
+.pdp,.grid2,.cols2,.cgrid{grid-template-columns:1fr}.pdp .ph,.summary{position:static}.fields{grid-template-columns:1fr}.sec-head{flex-direction:column;align-items:flex-start}.fgrid{grid-template-columns:1fr}.box dl{grid-template-columns:1fr;gap:2px}.box dt{margin-top:8px}.cart .t{display:none}.line{grid-template-columns:70px 1fr}.line .tot{grid-column:2}}
+@media(max-width:520px){.cards{gap:26px 12px}.card .meta{flex-direction:column}.pbox{align-items:flex-start}.steps,.trust ul{grid-template-columns:1fr}}
+/* ===== Sparkles by Siraa: pastel + white theme ===== */
+body{background:#fff}
+.ann{background:linear-gradient(90deg,var(--rose),var(--lav),var(--mint),var(--sky));color:var(--emerald);font-weight:400}
+.brand{flex-direction:row;align-items:center;gap:12px}
+.brand .lg{width:68px;height:68px;border-radius:50%;overflow:hidden;flex:none;display:block;border:1px solid var(--line);background:#fff}
+.brand .lg img{width:150%;max-width:none;height:150%;margin:-25%;object-fit:cover}
+.brand .wm{display:flex;flex-direction:column;line-height:1}
+.brand b{font-family:var(--serif);font-weight:600;font-size:30px;letter-spacing:.06em;color:var(--emerald)}
+.brand small{font-size:10px;letter-spacing:.42em;color:var(--gold-deep);margin-top:5px}
+.btn{background:var(--rose);border-color:var(--rose);color:var(--emerald)}
+.btn:hover{background:#fff;color:var(--emerald);border-color:var(--gold)}
+.btn.gold{background:var(--lav);border-color:var(--lav);color:var(--emerald)}.btn.gold:hover{background:#fff;color:var(--emerald);border-color:var(--gold)}
+.btn.line{background:#fff;border-color:var(--gold);color:var(--emerald)}.btn.line:hover{background:var(--rose);color:var(--emerald)}
+.badge{background:var(--rose);color:var(--emerald)}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:18px}
+.hero{background:linear-gradient(120deg,var(--rose) 0%,#fff 45%,var(--lav) 100%);color:var(--ink)}
+.hero .wrap{grid-template-columns:.95fr 1.05fr}
+.hero h1 em{color:var(--gold-deep)}.hero p{color:var(--mute)}
+.hero .btn{background:var(--emerald);border-color:var(--emerald);color:#fff}.hero .btn:hover{background:#fff;color:var(--emerald)}
+.hpic img{width:100%;height:auto;border-radius:200px 200px 24px 24px;box-shadow:0 30px 60px rgba(74,56,41,.22);border:8px solid #fff}
+.trust{background:linear-gradient(90deg,var(--mint),var(--sky),var(--lav));border-color:transparent}
+.film{position:relative;background:var(--pearl)}
+.film img{width:100%;height:auto;max-height:640px;object-fit:cover}
+.film-cap{position:absolute;left:clamp(20px,6vw,90px);bottom:clamp(20px,6vw,70px);background:rgba(255,255,255,.88);backdrop-filter:blur(6px);padding:22px 30px;border-radius:4px}
+.film-cap .eyebrow{margin-bottom:6px}.film-cap h2{font-size:clamp(28px,4vw,48px)}
+.summary,.box,.notice{background:var(--pearl)}
+.cat{border-color:transparent;border-radius:6px}.cat:hover{border-color:var(--gold)}
+.cat:nth-child(1){background:var(--rose)}.cat:nth-child(2){background:var(--lav)}.cat:nth-child(3){background:var(--mint)}.cat:nth-child(4){background:var(--sky)}
+.card .ph{background:radial-gradient(circle at 50% 38%,#fff 0%,var(--pearl) 100%);border-radius:6px}
+.tag{background:var(--lav);color:var(--emerald)}.tag.low{background:#e6d7c3;color:#4a3829}
+.stock.low{color:#9a4a3a}
+.filters button{background:#fff;border-radius:30px}.filters button[aria-pressed=true]{background:var(--rose);color:var(--emerald);border-color:var(--gold)}
+.sizes input:checked+span{background:var(--rose);color:var(--emerald);border-color:var(--gold)}
+.pbox .off{background:var(--peach)}
+.story{background:linear-gradient(120deg,var(--lav),var(--rose));color:var(--ink)}
+.story .wrap{max-width:none}.story p{color:var(--mute)}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.story-grid img{width:100%;height:auto;border-radius:6px;border:8px solid #fff;box-shadow:0 24px 50px rgba(74,56,41,.2)}
+.toast{background:#fff;color:var(--ink);border-color:var(--gold);box-shadow:0 10px 30px rgba(74,56,41,.2)}.toast a{color:var(--gold-deep)}
+footer{background:linear-gradient(120deg,var(--lav),var(--rose) 60%,var(--peach));color:var(--ink)}
+footer h4{color:var(--emerald)}footer a:hover{color:var(--gold-deep)}
+footer .brand b{color:var(--emerald);font-size:30px}footer .brand small{color:var(--gold-deep)}
+footer .brand .lg{width:96px;height:96px}footer li b{color:var(--emerald)}
+.fbar{border-top-color:rgba(74,56,41,.18)}
+@media(max-width:960px){.hero .wrap{grid-template-columns:1fr}.story-grid{grid-template-columns:1fr}.hpic{order:-1}}
+@media(max-width:520px){.brand .wm b{font-size:24px}.brand .lg{width:56px;height:56px}:root{--nav:76px}}
+
+/* ===== photos as soft backgrounds under the text ===== */
+.hero{background:linear-gradient(100deg,rgba(239,227,211,.93) 0%,rgba(255,255,255,.80) 48%,rgba(230,215,195,.62) 100%),url(images/sparkles_banner_2.jpg) center/cover no-repeat}
+.hero .wrap{grid-template-columns:1fr;min-height:min(80vh,620px)}
+.hero .hcopy{max-width:560px}
+.film{min-height:clamp(320px,42vw,520px);display:grid;align-items:center;background:linear-gradient(rgba(239,227,211,.62),rgba(230,215,195,.55)),url(images/sparkles_banner_3.gif) center/cover no-repeat}
+.film-cap{position:static;background:none;backdrop-filter:none;padding:0 24px;text-align:center;color:var(--emerald)}
+.film-cap h2{font-size:clamp(38px,6vw,84px);font-weight:400}
+.story{background:linear-gradient(120deg,rgba(230,215,195,.9),rgba(239,227,211,.86)),url(images/sparkles_banner.jpg) center/cover no-repeat}
+.story-grid{display:block}
+@media(max-width:960px){.hero{background:linear-gradient(rgba(239,227,211,.9),rgba(255,255,255,.82)),url(images/sparkles_banner_2.jpg) center/cover no-repeat}}
+
+/* banner: no text, brighter photo */
+.film{display:block;min-height:0;background:var(--pearl);position:relative;line-height:0}
+.film img{width:100%;height:auto;max-height:640px;object-fit:cover;filter:brightness(1.35) contrast(.92) saturate(1.05)}
+.film::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(239,227,211,.18),rgba(230,215,195,.12));pointer-events:none}
+
+/* images at ~90% exposure, faded only behind the text */
+.hero{background:linear-gradient(90deg,rgba(247,244,239,.94) 0%,rgba(247,244,239,.82) 30%,rgba(255,255,255,.35) 55%,rgba(255,255,255,0) 75%),linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)),url(images/sparkles_banner_2.jpg) center/cover no-repeat}
+.story{background:linear-gradient(90deg,rgba(239,227,211,.95) 0%,rgba(239,227,211,.85) 35%,rgba(247,244,239,.3) 60%,rgba(255,255,255,0) 80%),linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)),url(images/sparkles_banner.jpg) center/cover no-repeat}
+@media(max-width:960px){.hero{background:linear-gradient(rgba(247,244,239,.86),rgba(247,244,239,.62)),url(images/sparkles_banner_2.jpg) center/cover no-repeat}.story{background:linear-gradient(rgba(239,227,211,.88),rgba(239,227,211,.7)),url(images/sparkles_banner.jpg) center/cover no-repeat}}
+
+/* transparent header (frosted only after scrolling) */
+.nav{background:transparent;backdrop-filter:none;border-bottom:1px solid transparent;transition:background .25s,border-color .25s}
+.nav.scrolled{background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border-bottom-color:var(--line)}
+body:has(.hero) .nav{margin-bottom:calc(-1*var(--nav))}
+.hero{padding-top:var(--nav)}
+
+/* clearly visible header buttons */
+.menu{gap:12px}
+.menu a{color:var(--emerald);font-weight:500;letter-spacing:.04em;background:rgba(255,255,255,.82);border:1px solid rgba(122,90,60,.35);border-radius:30px;padding:9px 22px;box-shadow:0 2px 10px rgba(74,56,41,.12);transition:background .2s,border-color .2s}
+.menu a:hover{background:var(--rose);border-color:var(--gold-deep)}
+.menu a[aria-current]{background:var(--rose);border-color:var(--gold-deep)}
+.cart{color:var(--emerald);font-weight:500;background:rgba(255,255,255,.82);border:1px solid rgba(122,90,60,.35);border-radius:30px;padding:8px 18px;box-shadow:0 2px 10px rgba(74,56,41,.12)}
+.cart:hover{background:var(--rose)}
+.burger{color:var(--emerald);background:rgba(255,255,255,.82);border:1px solid rgba(122,90,60,.35);border-radius:50%;width:46px;height:46px}
+@media(max-width:820px){.menu{background:#fff;gap:0}.menu a{background:none;border:0;border-radius:0;box-shadow:none;padding:14px 0}.menu a[aria-current]{background:none;color:var(--gold-deep)}}
+
+/* trust bar: single dark colour */
+.trust{background:#4a3829;border-color:transparent}
+.trust strong{color:#fff}
+.trust span{color:#e5ddf7}
+
+/* top announcement bar: same dark plum */
+.ann{background:#4a3829;color:#fff}
+
+/* top bar + trust bar: dark rose */
+.ann,.trust{background:#4a3829}
+.ann{color:#fff}
+.trust strong{color:#fff}
+.trust span{color:#efe3d3}
+
+/* hero button: same dark rose */
+.hero .btn{background:#4a3829;border-color:#4a3829;color:#fff}
+.hero .btn:hover{background:#fff;color:#4a3829;border-color:#4a3829}
+
+/* category cards with photos */
+.cat{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.cat img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;transition:transform .5s}
+.cat:hover img{transform:scale(1.04)}
+.cat h3{padding:16px 10px 18px;font-size:26px}
+
+/* category cards: compact size like before */
+.cat img{aspect-ratio:4/3}
+.cat h3{padding:12px 10px 14px;font-size:24px}
+
+/* category cards: square, photo fills the card, name over the photo */
+.cat{position:relative;aspect-ratio:1/1;display:block}
+.cat img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+.cat h3{position:absolute;left:0;right:0;bottom:0;margin:0;padding:38px 10px 14px;font-size:26px;color:#fff;text-shadow:0 1px 8px rgba(50,40,32,.45);background:linear-gradient(transparent,rgba(80,62,48,.55))}
+
+/* quick add on product cards */
+.qbar{position:absolute;left:10px;right:10px;bottom:10px;z-index:2;display:flex;align-items:center;justify-content:center;gap:6px;padding:10px;background:rgba(250,247,242,.94);border-radius:18px;box-shadow:0 4px 18px rgba(74,56,41,.12)}
+.qbtn{font:inherit;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;background:#4a3829;color:#fff;border:1px solid #4a3829;border-radius:30px;padding:13px 30px;cursor:pointer;transition:background .2s,color .2s}
+.qbtn:hover{background:#fff;color:#4a3829}
+.qlbl{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);margin-right:4px}
+.qs{font:inherit;font-size:14px;width:38px;height:38px;border-radius:50%;border:1px solid #4a3829;background:#fff;color:#4a3829;cursor:pointer}
+.qs:hover{background:#4a3829;color:#fff}
+@media(max-width:520px){.qbtn{padding:11px 18px;font-size:12px;letter-spacing:.14em}.qs{width:34px;height:34px}}
+
+/* quick add: appears on hover (computers); always visible on touch screens */
+@media(hover:hover){
+.qbar{opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .25s,transform .25s}
+.card:hover .qbar,.card:focus-within .qbar{opacity:1;transform:none;pointer-events:auto}
+}
+
+/* ===== Motion layer (ported): loader, word reveals, rises, parallax, springs ===== */
+.ann{display:flex;align-items:center;justify-content:center;gap:12px}
+.ann-view{display:grid;min-width:0}
+.ann-slide{grid-area:1/1;display:flex;align-items:center;justify-content:center;gap:10px;opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .45s,transform .45s,visibility .45s}
+.ann-slide.on{opacity:1;visibility:visible;transform:none}
+.ann-slide svg{flex:none}
+.ann-arrow{flex:none;background:transparent;border:0;color:inherit;font-size:20px;line-height:1;cursor:pointer;padding:0 8px;opacity:.75}
+.ann-arrow:hover{opacity:1}
+@media(max-width:560px){.ann-slide svg{width:15px;height:15px}.ann-arrow{padding:0 4px}.ann-slide{font-size:12px}}
+
+.hero,.story{position:relative;isolation:isolate;overflow:hidden}
+.hero{background:#efe3d3}
+.story{background:#e6d7c3}
+.hero-media{position:absolute;inset:0;z-index:-1;background:url(images/sparkles_banner_2.jpg) center/cover no-repeat}
+.story-media{background-image:url(images/sparkles_banner.jpg)}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(247,244,239,.94) 0%,rgba(247,244,239,.82) 30%,rgba(255,255,255,.35) 55%,rgba(255,255,255,0) 75%),linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10))}
+.story-media::after{background:linear-gradient(90deg,rgba(239,227,211,.95) 0%,rgba(239,227,211,.85) 35%,rgba(247,244,239,.3) 60%,rgba(255,255,255,0) 80%),linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10))}
+@media(max-width:960px){.hero-media::after{background:linear-gradient(rgba(247,244,239,.86),rgba(247,244,239,.62))}.story-media::after{background:linear-gradient(rgba(239,227,211,.88),rgba(239,227,211,.7))}}
+
+.scroll-cue{all:unset;box-sizing:border-box;cursor:pointer;position:absolute;right:clamp(20px,3.5vw,56px);bottom:clamp(28px,6vh,64px);display:flex;flex-direction:column;align-items:center;gap:12px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--emerald)}
+.scroll-cue i{display:block;position:relative;width:1px;height:84px;background:rgba(74,56,41,.5)}
+.scroll-cue i::after{content:"";position:absolute;left:-4px;bottom:-9px;width:9px;height:9px;border:1px solid rgba(74,56,41,.7);border-radius:50%}
+.scroll-cue:focus-visible{outline:2px solid var(--gold-deep);outline-offset:6px}
+@media(max-width:900px){.scroll-cue{display:none}}
+
+#rl{position:fixed;inset:0;z-index:300;background:#4a3829;color:#f7f4ef;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;will-change:transform}
+#rl .wm{font-family:var(--serif);font-size:clamp(28px,3vw,44px);letter-spacing:.2em;opacity:0;transform:translateY(16px);transition:opacity .9s cubic-bezier(.2,.9,.25,1.04),transform 1s cubic-bezier(.2,.9,.25,1.04)}
+#rl .wm span{font-size:.45em;letter-spacing:.42em;display:block;text-align:center;margin-top:.5em}
+#rl .tr{width:160px;height:1px;background:rgba(255,255,255,.25);border-radius:99px;overflow:hidden}
+#rl .tr i{display:block;height:100%;background:#fff;transform:scaleX(0);transform-origin:left;transition:transform 1280ms cubic-bezier(.65,0,.35,1) 120ms}
+#rl.go .wm{opacity:1;transform:none}#rl.go .tr i{transform:scaleX(1)}
+#rl.out{transform:translateY(-105%);transition:transform 850ms cubic-bezier(.65,0,.35,1)}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+
+@media (prefers-reduced-motion:no-preference){
+html.m-on .m-w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
+html.m-on .m-w>span{display:inline-block;opacity:0;transform:translateY(115%)}
+html.m-on .m-in .m-w>span,html.m-on .m-w.m-in>span{opacity:1;transform:none;transition:transform 1.1s cubic-bezier(.16,1,.3,1) calc(var(--d,0ms) + var(--i)*110ms),opacity .6s ease calc(var(--d,0ms) + var(--i)*110ms)}
+html.m-on .m-r{opacity:0;translate:0 28px}
+html.m-on .m-r.m-in{opacity:1;translate:0 0;transition:opacity .9s ease var(--d,0ms),translate 1.1s cubic-bezier(.2,.9,.25,1.04) var(--d,0ms)}
+html.m-on .nav{translate:0 -100%;transition:translate 1s cubic-bezier(.16,1,.3,1) .2s,background .25s,border-color .25s}
+html.m-on .nav.m-nav{translate:0 0}
+html.m-on .hero-media{opacity:0;transform:scale(1.05);will-change:opacity,transform}
+html.m-on .hero-media.ready{animation:heroin 1.6s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes heroin{to{opacity:1;transform:none}}
+.cat img{transition:scale .7s cubic-bezier(.34,1.4,.64,1)}
+.card .ph svg{transition:transform .7s cubic-bezier(.34,1.4,.64,1)}
+.btn,.qbtn{transition:background .3s,color .3s,border-color .3s,translate .5s cubic-bezier(.34,1.56,.64,1)}
+.btn .arw{display:inline-block;transition:translate .45s cubic-bezier(.34,1.56,.64,1)}
+.stock.low,.tag.low{animation:lowpulse 1.8s ease-in-out infinite}
+@keyframes lowpulse{50%{opacity:.55}}
+}
+@media (hover:hover) and (min-width:769px){
+.cat:hover img{transform:none;scale:1.06}
+.cat{transition:translate .5s cubic-bezier(.34,1.56,.64,1),border-color .3s}
+.cat:hover{translate:0 -6px}
+.btn:hover .arw{translate:6px 0}
+.btn:active,.qbtn:active{translate:0 1px}
+}
+.menu a{transition:color .25s,border-color .25s,background .2s}
+.filters button,.sizes span{transition:all .2s}
+details.acc summary::after{transition:transform .25s}
+details.acc[open] summary::after{transform:rotate(45deg)}
+
+.sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;align-items:center;gap:14px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:#fff;border-top:1px solid var(--gold);box-shadow:0 -8px 24px rgba(74,56,41,.18);transform:translateY(110%);transition:transform .3s ease}
+.sticky-bar.show{transform:none}
+.sb-info{flex:1;min-width:0;line-height:1.3}
+.sb-info strong{display:block;font-family:var(--serif);font-weight:500;font-size:19px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--emerald)}
+.sb-info span{font-size:14.5px;color:var(--mute)}
+.sticky-bar .btn{width:auto;flex:none;padding:13px 22px;white-space:nowrap}
+@media(max-width:760px){.sticky-bar{display:flex}body.has-sticky{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}body.has-sticky .toast{bottom:calc(92px + env(safe-area-inset-bottom,0px))}}
+
+/* ===== Palette: warm cream / taupe / bronze ===== */
+body{background:#f7f4ef}
+.ann{background:#4a3829;color:#f1e4cf}
+.nav.scrolled{background:rgba(247,244,239,.92)}
+.hero{background:linear-gradient(120deg,#f7f4ef 0%,#efe3d3 55%,#e6d7c3 100%)}
+.hero h1{color:#2b221b}.hero h1 em{color:#7a5a3c}
+.hero p{color:#3d332a}
+.eyebrow{color:#c9a46c}
+.hero .btn,.btn{background:#4a3829;border-color:#4a3829;color:#fff}
+.hero .btn:hover,.btn:hover{background:transparent;color:#4a3829;border-color:#4a3829}
+.btn.gold{background:#c9a46c;border-color:#c9a46c;color:#2b221b}
+.btn.line{background:transparent;border-color:#4a3829;color:#4a3829}.btn.line:hover{background:#4a3829;color:#fff}
+.badge{background:#c9a46c;color:#2b221b}
+.menu a,.cart,.burger{background:rgba(247,244,239,.85);border-color:rgba(74,56,41,.3);color:#4a3829;box-shadow:0 2px 10px rgba(74,56,41,.1)}
+.menu a:hover,.menu a[aria-current],.cart:hover{background:#efe3d3;border-color:#7a5a3c}
+.trust{background:#a8927a}
+.trust strong{color:#2b221b}.trust span{color:#3d332a}
+.cat:nth-child(n){background:#efe3d3}
+.card .ph,.pdp .ph{background:radial-gradient(circle at 50% 38%,#fbf8f3 0%,#efe3d3 100%)}
+.tag{background:#4a3829;color:#f1e4cf}.tag.low{background:#e6d7c3;color:#8a3a2a}
+.filters button{background:#f7f4ef}.filters button[aria-pressed=true],.sizes input:checked+span{background:#4a3829;color:#fff;border-color:#4a3829}
+.story{background:#e6d7c3;color:#2b221b}.story p{color:#3d332a}
+footer{background:linear-gradient(120deg,#e6d7c3,#efe3d3 60%,#f1e4cf);color:#2b221b}
+.toast{background:#f7f4ef}
+.film-cap,.scroll-cue{color:#4a3829}
+#rl{background:#4a3829;color:#f1e4cf}
+.f input,.f select,.f textarea,.qty,.sizes span,.pay,.brand .lg{background:#fbf8f3}
+
+/* ===== Lumora template style layer (shapes, motion feel, cursor reveal) - your palette, text and photos unchanged ===== */
+h1,h2{letter-spacing:-.015em}
+.sec-head h2,.page-head h1,.story h2{letter-spacing:-.02em}
+
+/* eyebrow with leading dot */
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem}
+.eyebrow::before{content:"";width:.375rem;height:.375rem;border-radius:9999px;background:currentColor;opacity:.7;flex:none}
+
+/* pill buttons with round arrow badge */
+.btn{border-radius:9999px}
+.btn:has(.arw){padding:6px 6px 6px 28px;gap:14px}
+.btn .arw{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:9999px;background:#fff;color:#4a3829;font-size:16px;letter-spacing:0;line-height:1;transition:translate .45s cubic-bezier(.34,1.56,.64,1),background .3s,color .3s}
+.btn:hover .arw,.btn.line .arw{background:#4a3829;color:#fff}
+.btn.line:hover .arw{background:#fff;color:#4a3829}
+@media(hover:hover) and (min-width:769px){.btn:hover{scale:1.04}.btn{transition:background .3s,color .3s,border-color .3s,translate .5s cubic-bezier(.34,1.56,.64,1),scale .35s cubic-bezier(.2,.8,.2,1)}}
+
+/* frosted header chips */
+.cart,.burger{background:rgba(247,244,239,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border:1px solid rgba(74,56,41,.22);border-radius:.875rem;box-shadow:none}
+.cart:hover{background:rgba(255,255,255,.8)}
+@media(min-width:821px){
+.menu{gap:10px}
+.menu a{background:rgba(247,244,239,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border:1px solid rgba(74,56,41,.22);border-radius:.875rem;box-shadow:none;padding:9px 20px;font-size:14px;transition:background .2s,border-color .2s,translate .35s cubic-bezier(.2,.8,.2,1)}
+.menu a:hover{background:rgba(255,255,255,.85);border-color:#7a5a3c}
+.menu a[aria-current]{background:rgba(255,255,255,.85);border-color:#7a5a3c}
+}
+@media(hover:hover){.menu a:hover{translate:0 -2px}}
+
+/* hero: rounded bottom, immersive height, big watermark */
+.hero{border-radius:0 0 2rem 2rem;display:flex;align-items:center;min-height:min(100svh,900px)}
+.hero .wrap{position:relative;z-index:20;min-height:0;width:min(1180px,100% - 48px);padding:56px 0 clamp(90px,13vw,190px)}
+.hero::after{content:"SPARKLES";position:absolute;inset-inline:0;bottom:clamp(.5rem,2.2vw,2rem);z-index:1;text-align:center;font-family:var(--serif);font-weight:600;letter-spacing:.06em;line-height:1;font-size:clamp(2.5rem,14.5vw,13rem);color:rgba(255,255,255,.45);pointer-events:none;user-select:none}
+.scroll-cue{z-index:20}
+@media(max-width:960px){.hero{min-height:0}}
+
+/* soft floating panels */
+.trust{margin:20px clamp(12px,2vw,32px) 0;border-radius:1.25rem}
+.story{margin-inline:clamp(12px,2vw,32px);border-radius:2rem}
+.cat{border-radius:2rem}
+.card .ph{border-radius:1.25rem}
+.pdp .ph{border-radius:2rem}
+.summary,.box,.ccard,.notice,.pay,.thumb{border-radius:1.25rem}
+.f input,.f select,.f textarea,.qty,.sizes span{border-radius:.875rem}
+.f input,.f textarea,.f select{transition:border-color .25s,background .25s}
+.f input:focus,.f textarea:focus,.f select:focus{outline:none;border-color:rgba(43,34,27,.4);background:#fff}
+.tag,.pbox .off{border-radius:9999px}
+.toast{border-radius:1.25rem}
+
+/* ordering steps become soft rounded tiles with hover fill */
+.steps li{border-top:0;background:rgba(239,227,211,.55);border-radius:1.25rem;padding:24px 24px 26px;transition:background .3s,translate .5s cubic-bezier(.34,1.4,.64,1)}
+@media(hover:hover) and (min-width:769px){.steps li:hover{background:#efe3d3;translate:0 -4px}}
+
+/* product cards lift like the template portfolio cards */
+@media(hover:hover) and (min-width:769px){
+.card{transition:translate .5s cubic-bezier(.34,1.4,.64,1),scale .5s cubic-bezier(.34,1.4,.64,1)}
+.card:hover{translate:0 -8px;scale:1.012}
+footer li a,.fbar nav a{display:inline-block;transition:translate .35s cubic-bezier(.2,.8,.2,1),color .2s}
+footer li a:hover{translate:4px 0}.fbar nav a:hover{translate:3px 0}
+}
+
+/* footer: rounded top + watermark */
+footer{position:relative;overflow:hidden;border-radius:2rem 2rem 0 0;padding-bottom:clamp(40px,7vw,110px);margin-top:clamp(40px,6vw,80px)}
+footer .wrap{position:relative;z-index:10}
+footer::after{content:"SPARKLES";position:absolute;inset-inline:0;bottom:-.12em;z-index:0;text-align:center;font-family:var(--serif);font-weight:600;letter-spacing:.06em;line-height:1;font-size:clamp(2.5rem,13.5vw,12rem);color:rgba(74,56,41,.07);pointer-events:none;user-select:none}
+
+/* loader: rounded bottom, counter + progress, content fades on exit */
+#rl{border-radius:0 0 2rem 2rem}
+#rl .tr{width:min(22rem,72vw);background:rgba(255,255,255,.18)}
+#rl .cnt{display:flex;justify-content:space-between;width:min(22rem,72vw);margin-top:-1.25rem;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.5)}
+#rl .cnt b{font-weight:500;color:rgba(255,255,255,.85);font-variant-numeric:tabular-nums}
+#rl.out .wm,#rl.out .tr,#rl.out .cnt{opacity:0;transform:translateY(-12px);transition:opacity .45s ease,transform .6s cubic-bezier(.22,1,.36,1)}
+
+
+/* scroll layer: template-style springy reveals + hero scroll drift */
+@media (prefers-reduced-motion:no-preference){
+html.m-on .lv{opacity:0;translate:0 44px}
+html.m-on .lv.story,html.m-on .lv.trust{scale:.985}
+html.m-on .lv.lv-in{opacity:1;translate:0 0;scale:1;transition:opacity .8s ease var(--sd,0ms),translate 1.1s cubic-bezier(.22,1,.36,1) var(--sd,0ms),scale 1.1s cubic-bezier(.22,1,.36,1) var(--sd,0ms)}
+.hero::after{translate:0 calc(var(--wp,0)*-60px)}
+.hero .hcopy{will-change:translate,opacity}
+}
+
+html{scroll-behavior:auto!important}
+.hero::after{will-change:translate}
+
+
+/* collection page banner */
+.shop-banner{position:relative;isolation:isolate;overflow:hidden;border-radius:2rem;margin:20px 0 28px;min-height:clamp(250px,32vw,400px);padding:clamp(28px,5vw,60px);display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:linear-gradient(0deg,rgba(40,28,18,.78) 0%,rgba(40,28,18,.38) 48%,rgba(40,28,18,.12) 100%),url(images/banner_sparkles.jpg) center/cover no-repeat}
+.shop-banner .crumbs,.shop-banner .crumbs a{color:rgba(255,255,255,.85)}
+.shop-banner h1{color:#fff;text-shadow:0 2px 18px rgba(30,20,12,.35)}
+.shop-banner p{color:rgba(255,255,255,.92);max-width:46ch}
+@media(max-width:520px){.shop-banner{border-radius:1.25rem;min-height:230px}}
+
+/* cursor liquid reveal canvas (lives inside the hero photo layer) */
+.lq{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+
+.ph img.product-photo{display:block;width:100%;height:100%;object-fit:contain;background:#fff}
+
+/* instagram */
+.ig{display:grid;place-items:center;width:44px;height:44px;color:#4a3829;background:rgba(247,244,239,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border:1px solid rgba(74,56,41,.22);border-radius:.875rem;transition:background .2s,translate .35s cubic-bezier(.2,.8,.2,1)}
+.ig:hover{background:rgba(255,255,255,.85)}
+.ig svg{width:22px;height:22px}
+@media(hover:hover){.ig:hover{translate:0 -2px}}
+.follow-box{position:relative;overflow:hidden;text-align:center;background:linear-gradient(135deg,#f1e4cf 0%,#efe3d3 45%,#e6d7c3 100%);border-radius:2rem;padding:clamp(40px,6vw,76px) clamp(18px,4vw,56px) clamp(36px,5vw,60px)}
+.follow-box::before,.follow-box::after{content:"";position:absolute;border-radius:50%;pointer-events:none;z-index:0}
+.follow-box::before{width:340px;height:340px;right:-110px;top:-120px;background:radial-gradient(circle,rgba(201,164,108,.38),transparent 70%)}
+.follow-box::after{width:300px;height:300px;left:-100px;bottom:-110px;background:radial-gradient(circle,rgba(122,90,60,.2),transparent 70%)}
+.follow-box>*{position:relative;z-index:1}
+.ig-badge{display:grid;place-items:center;width:64px;height:64px;margin:0 auto 18px;border-radius:50%;color:#fff;background:linear-gradient(135deg,#c9a46c,#7a5a3c);box-shadow:0 12px 28px rgba(74,56,41,.28)}
+.ig-badge svg{width:30px;height:30px}
+.follow-box h2{font-size:clamp(32px,4.8vw,60px);margin:4px 0 12px}
+.follow-box h2 em{font-style:italic;color:var(--gold-deep)}
+.follow-box .follow-top p{color:var(--mute);max-width:44ch;margin:0 auto 20px}
+.ig-handle{display:inline-block;text-decoration:none;font-weight:500;letter-spacing:.06em;color:#4a3829;background:rgba(255,255,255,.7);border:1px solid rgba(74,56,41,.25);border-radius:9999px;padding:8px 22px;transition:background .2s,translate .35s cubic-bezier(.2,.8,.2,1)}
+.ig-handle:hover{background:#fff;translate:0 -2px}
+.ig-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin:clamp(28px,4vw,46px) 0 clamp(26px,4vw,40px)}
+.ig-tile{position:relative;display:block;aspect-ratio:1;overflow:hidden;border-radius:1.25rem;background:#fbf8f3;border:4px solid #fff;box-shadow:0 10px 26px rgba(74,56,41,.16);transition:translate .5s cubic-bezier(.34,1.4,.64,1),rotate .5s cubic-bezier(.34,1.4,.64,1)}
+.ig-tile img{width:100%;height:100%;object-fit:cover;transition:scale .6s cubic-bezier(.2,.8,.2,1)}
+.ig-ov{position:absolute;inset:0;display:grid;place-items:center;color:#fff;background:rgba(74,56,41,.5);opacity:0;transition:opacity .3s}
+.ig-ov svg{width:32px;height:32px}
+.ig-tile:hover .ig-ov,.ig-tile:focus-visible .ig-ov{opacity:1}
+.ig-tile:hover img{scale:1.08}
+@media(hover:hover) and (min-width:769px){.ig-tile.t0,.ig-tile.t2,.ig-tile.t4{translate:0 10px}.ig-tile:hover{translate:0 -6px;rotate:-1.5deg}}
+@media(max-width:820px){.ig-grid{grid-template-columns:repeat(3,1fr);gap:10px}}
+</style>
+</head>
+<body>
+<div id="rl" aria-hidden="true"><div class="wm">SPARKLES <span>BY SIRAA</span></div><div class="tr"><i></i></div><div class="cnt"><span>Loading</span><b id="rlc">000</b></div></div>
+<header class="nav"><div class="wrap">
+<a class="brand" href="#/" aria-label="Sparkles by Siraa, home"><span class="lg"><img src="images/sparkles_logo.jpg" alt="" width="150" height="150"></span><span class="wm"><b>Sparkles</b><small>BY SIRAA</small></span></a>
+<ul class="menu" id="menu">
+<li><a href="#/" data-nav="home">Home</a></li><li><a href="#/shop" data-nav="shop">Shop</a></li><li><a href="#/contact" data-nav="contact">Contact</a></li></ul>
+<div class="nav-r"><a class="ig" href="https://instagram.com/sparklebysiraa" target="_blank" rel="noopener" aria-label="Sparkles by Siraa on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></svg></a><a class="cart" href="#/cart" aria-label="Shopping cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="t">Cart</span><span class="badge" id="badge">0</span></a>
+<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">&#9776;</button></div>
+</div></header>
+<main id="main" tabindex="-1"><noscript><p style="padding:60px 24px;text-align:center">Please turn on JavaScript to browse and order, or message us on WhatsApp: +971 58 837 3604.</p></noscript></main>
+<footer id="footer"></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* =====================================================================
+   SHOP SETTINGS (same connections as the old site: Google Sheet, Ziina, email, WhatsApp)
+   ===================================================================== */
+var CONFIG = {
+  currency: "AED",
+  whatsapp: "971588373604",
+  phoneDisplay: "+971 58 837 3604",
+  email: "sparklesbysiraa@gmail.com",
+  instagram: "sparklebysiraa",
+  lowStock: 3,
+  hours: "Daily, 8:00 AM – 10:00 PM",
+  deliveryDays: "7–10 working days",
+  payments: { cod: true, cardOnDelivery: false, online: true },
+  sheetEndpoint: "https://script.google.com/macros/s/AKfycbweQHtJ6l2NqKyk13UlefeUFI6PDnmpJbmR1L2EQM2Hhlg-TVV2yvRn1AaVnhk8en8O/exec",
+  sheetKey: "Roohi",
+  emirates: ["Abu Dhabi","Dubai","Sharjah","Ajman","Umm Al Quwain","Ras Al Khaimah","Fujairah"],
+  ringSizes: ["5","6","7","8","9"]
+};
+
+/* =====================================================================
+   PRODUCTS. cat: ring | necklace | earrings | bracelet
+   metal: gold | rose | silver     stone: any hex colour (the drawing uses it)
+   stock 0 = Sold out.  off = optional % shown with a crossed-out price.
+   For rings, "sizes" turns each ring size on/off.
+   ===================================================================== */
+var NEW_PRODUCTS = [
+ {"id":"sparkles-001","name":"Verdant Charm Pendant","cat":"necklace","price":125,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-001.jpg"},
+ {"id":"sparkles-002","name":"Golden Drop Necklace","cat":"necklace","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-002.jpg"},
+ {"id":"sparkles-003","name":"Petite Crescent Hoops","cat":"earrings","price":69,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-003.jpg"},
+ {"id":"sparkles-004","name":"Clover Glow Necklace","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-004.jpg"},
+ {"id":"sparkles-005","name":"Triple Dot Necklace","cat":"necklace","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-005.jpg"},
+ {"id":"sparkles-006","name":"Golden Orbit Pendant","cat":"necklace","price":109,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-006.jpg"},
+ {"id":"sparkles-007","name":"Celestial Trio Necklace","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-007.jpg"},
+ {"id":"sparkles-008","name":"Mini Coin Layer Necklace","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-008.jpg"},
+ {"id":"sparkles-009","name":"Emerald Dew Pendant","cat":"necklace","price":129,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-009.jpg"},
+ {"id":"sparkles-010","name":"Dainty Bloom Necklace","cat":"necklace","price":109,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-010.jpg"},
+ {"id":"sparkles-011","name":"Olive Charm Necklace","cat":"necklace","price":125,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-011.jpg"},
+ {"id":"sparkles-012","name":"Lotus Cluster Necklace","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-012.jpg"},
+ {"id":"sparkles-013","name":"Petal Gleam Necklace","cat":"necklace","price":109,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-013.jpg"},
+ {"id":"sparkles-014","name":"Heartlink Chain Necklace","cat":"necklace","price":149,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-014.jpg"},
+ {"id":"sparkles-015","name":"Starry Strand Necklace","cat":"necklace","price":139,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-015.jpg"},
+ {"id":"sparkles-016","name":"Sunbeam Layer Necklace","cat":"necklace","price":149,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-016.jpg"},
+ {"id":"sparkles-017","name":"Triple Charm Chain","cat":"necklace","price":149,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-017.jpg"},
+ {"id":"sparkles-018","name":"Dotted Horizon Necklace","cat":"necklace","price":139,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-018.jpg"},
+ {"id":"sparkles-019","name":"Onyx Bead Layer Necklace","cat":"necklace","price":155,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-019.jpg"},
+ {"id":"sparkles-020","name":"Golden Bar Necklace","cat":"necklace","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-020.jpg"},
+ {"id":"sparkles-021","name":"Golden Arc Necklace","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-021.jpg"},
+ {"id":"sparkles-022","name":"Midnight Teardrop Necklace","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-022.jpg"},
+ {"id":"sparkles-023","name":"Lunar Point Pendant","cat":"necklace","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-023.jpg"},
+ {"id":"sparkles-024","name":"Golden V Pendant","cat":"necklace","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-024.jpg"},
+ {"id":"sparkles-025","name":"Lucky Clover Necklace","cat":"necklace","price":109,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-025.jpg"},
+ {"id":"sparkles-026","name":"Open Circle Pendant","cat":"necklace","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-026.jpg"},
+ {"id":"sparkles-027","name":"Double V Necklace","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-027.jpg"},
+ {"id":"sparkles-028","name":"Soft Curve Necklace","cat":"necklace","price":109,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-028.jpg"},
+ {"id":"sparkles-029","name":"Dainty Link Necklace","cat":"necklace","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-029.jpg"},
+ {"id":"sparkles-030","name":"Sunlit Solitaire Pendant","cat":"necklace","price":109,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-030.jpg"},
+ {"id":"sparkles-031","name":"Twin Layer Necklace","cat":"necklace","price":129,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-031.jpg"},
+ {"id":"sparkles-032","name":"Square Glow Pendant","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-032.jpg"},
+ {"id":"sparkles-033","name":"Beaded Crescent Necklace","cat":"necklace","price":129,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-033.jpg"},
+ {"id":"sparkles-034","name":"Roundabout Pendant","cat":"necklace","price":109,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-034.jpg"},
+ {"id":"sparkles-035","name":"Modern V Necklace","cat":"necklace","price":109,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-035.jpg"},
+ {"id":"sparkles-036","name":"Golden Tear Pendant","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-036.jpg"},
+ {"id":"sparkles-037","name":"Layered Ladder Necklace","cat":"necklace","price":139,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-037.jpg"},
+ {"id":"sparkles-038","name":"Crystal Line Necklace","cat":"necklace","price":129,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-038.jpg"},
+ {"id":"sparkles-039","name":"Ruby Heart Necklace","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-039.jpg"},
+ {"id":"sparkles-040","name":"Red Halo Pendant","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-040.jpg"},
+ {"id":"sparkles-041","name":"Golden Station Necklace","cat":"necklace","price":129,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-041.jpg"},
+ {"id":"sparkles-042","name":"Luminous Drop Necklace","cat":"necklace","price":119,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"An elegant necklace with a delicate chain and a distinctive pendant.","image":"products/product-042.jpg"},
+ {"id":"sparkles-043","name":"Petite Crystal Huggies","cat":"earrings","price":69,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-043.jpg"},
+ {"id":"sparkles-044","name":"Sculpted Gold Hoops","cat":"earrings","price":79,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-044.jpg"},
+ {"id":"sparkles-045","name":"Twinkle Huggie Hoops","cat":"earrings","price":69,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-045.jpg"},
+ {"id":"sparkles-046","name":"Classic Mini Hoops","cat":"earrings","price":59,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-046.jpg"},
+ {"id":"sparkles-047","name":"Double Shine Hoops","cat":"earrings","price":79,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-047.jpg"},
+ {"id":"sparkles-048","name":"Textured Circle Hoops","cat":"earrings","price":79,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-048.jpg"},
+ {"id":"sparkles-049","name":"Twist Mini Hoops","cat":"earrings","price":69,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-049.jpg"},
+ {"id":"sparkles-050","name":"Chunky Square Hoops","cat":"earrings","price":89,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-050.jpg"},
+ {"id":"sparkles-051","name":"Sweetheart Studs","cat":"earrings","price":59,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-051.jpg"},
+ {"id":"sparkles-052","name":"Bow Charm Studs","cat":"earrings","price":59,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-052.jpg"},
+ {"id":"sparkles-053","name":"Soft Square Studs","cat":"earrings","price":59,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-053.jpg"},
+ {"id":"sparkles-054","name":"Golden Ripple Hoops","cat":"earrings","price":89,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-054.jpg"},
+ {"id":"sparkles-055","name":"Daisy Glow Studs","cat":"earrings","price":69,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-055.jpg"},
+ {"id":"sparkles-056","name":"Butterfly Kiss Studs","cat":"earrings","price":69,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-056.jpg"},
+ {"id":"sparkles-057","name":"Golden Kite Drops","cat":"earrings","price":79,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-057.jpg"},
+ {"id":"sparkles-058","name":"Clover Bloom Studs","cat":"earrings","price":69,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-058.jpg"},
+ {"id":"sparkles-059","name":"Four Petal Studs","cat":"earrings","price":69,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-059.jpg"},
+ {"id":"sparkles-060","name":"Petite Sunburst Studs","cat":"earrings","price":69,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-060.jpg"},
+ {"id":"sparkles-061","name":"Golden Bar Studs","cat":"earrings","price":59,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-061.jpg"},
+ {"id":"sparkles-062","name":"Radiant Flower Studs","cat":"earrings","price":69,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-062.jpg"},
+ {"id":"sparkles-063","name":"Midnight Dot Studs","cat":"earrings","price":59,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-063.jpg"},
+ {"id":"sparkles-064","name":"Golden Cascade Drops","cat":"earrings","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-064.jpg"},
+ {"id":"sparkles-065","name":"Petal Cluster Drops","cat":"earrings","price":89,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-065.jpg"},
+ {"id":"sparkles-066","name":"Geometric Link Drops","cat":"earrings","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-066.jpg"},
+ {"id":"sparkles-067","name":"Sunlit Coin Drops","cat":"earrings","price":89,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-067.jpg"},
+ {"id":"sparkles-068","name":"Lemon Drop Earrings","cat":"earrings","price":89,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-068.jpg"},
+ {"id":"sparkles-069","name":"Golden Disc Drops","cat":"earrings","price":89,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-069.jpg"},
+ {"id":"sparkles-070","name":"Starflower Studs","cat":"earrings","price":69,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-070.jpg"},
+ {"id":"sparkles-071","name":"Linear Gem Drops","cat":"earrings","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-071.jpg"},
+ {"id":"sparkles-072","name":"Golden Thread Drops","cat":"earrings","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-072.jpg"},
+ {"id":"sparkles-073","name":"Blooming Charm Studs","cat":"earrings","price":79,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-073.jpg"},
+ {"id":"sparkles-074","name":"Golden Line Drops","cat":"earrings","price":89,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-074.jpg"},
+ {"id":"sparkles-075","name":"Sculpted Bar Drops","cat":"earrings","price":89,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-075.jpg"},
+ {"id":"sparkles-076","name":"Longline Tassel Drops","cat":"earrings","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-076.jpg"},
+ {"id":"sparkles-077","name":"Petite Clover Drops","cat":"earrings","price":79,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-077.jpg"},
+ {"id":"sparkles-078","name":"Delicate Bar Earrings","cat":"earrings","price":89,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-078.jpg"},
+ {"id":"sparkles-079","name":"Golden Leaf Drops","cat":"earrings","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-079.jpg"},
+ {"id":"sparkles-080","name":"Textured Leaf Drops","cat":"earrings","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-080.jpg"},
+ {"id":"sparkles-081","name":"Double Line Drops","cat":"earrings","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-081.jpg"},
+ {"id":"sparkles-082","name":"Rainbow Charm Studs","cat":"earrings","price":79,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-082.jpg"},
+ {"id":"sparkles-083","name":"Square Stone Drops","cat":"earrings","price":89,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-083.jpg"},
+ {"id":"sparkles-084","name":"Daisy Chain Drops","cat":"earrings","price":89,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-084.jpg"},
+ {"id":"sparkles-085","name":"Featherline Drops","cat":"earrings","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-085.jpg"},
+ {"id":"sparkles-086","name":"Golden Petal Drops","cat":"earrings","price":99,"stock":1,"metal":"gold","stone":"#f5e2b7","sizes":{},"short":"A polished pair of earrings with a distinctive, easy-to-style silhouette.","image":"products/product-086.jpg"}
+];
+
+var PRODUCTS = [];
+PRODUCTS = NEW_PRODUCTS.concat(PRODUCTS);
+var CATS={ring:"Rings",necklace:"Necklaces",earrings:"Earrings",bracelet:"Bracelets"};
+
+(function(){
+"use strict";
+var $=function(s,r){return (r||document).querySelector(s)};
+var $$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function money(n){return CONFIG.currency+" "+Number(n).toLocaleString("en-US")}
+function byId(id){return PRODUCTS.filter(function(p){return p.id===id})[0]}
+function inStock(p){return p&&Number(p.stock)>0}
+function lowStock(p){var n=Number(p&&p.stock);return n>0&&n<=(Number(CONFIG.lowStock)||3)}
+var mem={};
+function store(get,key,val){try{if(get)return JSON.parse(localStorage.getItem(key));localStorage.setItem(key,JSON.stringify(val))}catch(e){if(get)return mem[key]==null?null:mem[key];mem[key]=val}return null}
+function waLink(t){return "https://wa.me/"+CONFIG.whatsapp+(t?"?text="+encodeURIComponent(t):"")}
+var hasWA=function(){return /^\d{8,15}$/.test(CONFIG.whatsapp)};
+
+/* ---------- jewellery drawings (no photos) ---------- */
+var METAL={gold:["#f3dfa8","#c9a255","#8a6a38"],rose:["#f6d3c6","#d9a08c","#a86a58"],silver:["#f7f4ef","#c4cad3","#868e9a"]};
+var uid=0;
+function art(p){
+  if(p.image)return '<img class="product-photo" src="images/'+esc(p.image)+'" alt="'+esc(p.name)+'" loading="lazy">';
+  var m=METAL[p.metal]||METAL.gold,g="g"+(++uid),s="s"+uid,st=p.stone||"#fff";
+  var defs='<defs><linearGradient id="'+g+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="'+m[0]+'"/><stop offset=".55" stop-color="'+m[1]+'"/><stop offset="1" stop-color="'+m[2]+'"/></linearGradient><linearGradient id="'+s+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="'+st+'"/><stop offset="1" stop-color="'+st+'" stop-opacity=".7"/></linearGradient></defs>';
+  var G='url(#'+g+')',S='url(#'+s+')',b="";
+  function gem(x,y,r){return '<polygon points="'+(x-r)+','+y+' '+(x-r*.6)+','+(y-r*.7)+' '+(x+r*.6)+','+(y-r*.7)+' '+(x+r)+','+y+' '+x+','+(y+r*1.1)+'" fill="'+S+'" stroke="'+m[2]+'" stroke-width="1.5"/><path d="M'+(x-r)+','+y+'H'+(x+r)+'M'+x+','+(y-r*.7)+'L'+(x-r*.35)+','+y+'L'+x+','+(y+r*1.1)+'M'+x+','+(y-r*.7)+'L'+(x+r*.35)+','+y+'" stroke="#fff" stroke-opacity=".7" fill="none"/>'}
+  if(p.cat==="ring") b='<ellipse cx="100" cy="132" rx="46" ry="48" fill="none" stroke="'+G+'" stroke-width="11"/><path d="M82 92l-6-16h48l-6 16z" fill="'+G+'"/>'+gem(100,66,22);
+  else if(p.cat==="necklace") b='<path d="M30 30C40 120 160 120 170 30" fill="none" stroke="'+G+'" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 0"/><path d="M100 98v14" stroke="'+G+'" stroke-width="4"/>'+gem(100,126,19);
+  else if(p.cat==="earrings") b=[60,140].map(function(x){return '<circle cx="'+x+'" cy="40" r="7" fill="'+G+'"/><path d="M'+x+' 47v28" stroke="'+G+'" stroke-width="4"/>'+gem(x,92,15)}).join('');
+  else b='<ellipse cx="100" cy="100" rx="64" ry="48" fill="none" stroke="'+G+'" stroke-width="12"/>'+[0,1,2,3,4,5,6].map(function(i){var a=Math.PI*(.08+i*.14);return '<circle cx="'+(100-Math.cos(a)*64).toFixed(1)+'" cy="'+(100+Math.sin(a)*48).toFixed(1)+'" r="6" fill="'+S+'" stroke="'+m[2]+'"/>'}).join('');
+  return '<svg viewBox="0 0 200 180" role="img" aria-label="'+esc(p.name)+'">'+defs+b+'</svg>';
+}
+function heroGem(){
+  return '<svg class="gem" viewBox="0 0 400 400" role="img" aria-label="A faceted diamond"><defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#cfe6ff"/><stop offset="1" stop-color="#7fa6d6"/></linearGradient></defs>'+
+  '<polygon points="90,150 140,90 260,90 310,150 200,330" fill="url(#hg)" stroke="#e3cfa6" stroke-width="3"/>'+
+  '<path d="M90 150H310M140 90L170 150L200 90L230 150L260 90M170 150L200 330L230 150" stroke="#fff" stroke-opacity=".8" stroke-width="2" fill="none"/>'+
+  '<path d="M90 150L170 150L200 330zM310 150L230 150L200 330z" fill="#fff" fill-opacity=".14"/>'+
+  '<path class="sp" d="M320 60l6 18 18 6-18 6-6 18-6-18-18-6 18-6z" fill="#e3cfa6"/><path class="sp" d="M70 90l4 12 12 4-12 4-4 12-4-12-12-4 12-4z" fill="#fff"/><path class="sp" d="M330 250l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#e3cfa6"/></svg>';
+}
+
+/* ---------- cart ---------- */
+var cart=store(true,"sparkles_cart")||[];
+function saveCart(){store(false,"sparkles_cart",cart);updateBadge()}
+function updateBadge(){var n=cart.reduce(function(a,l){return a+l.qty},0),b=$("#badge");b.textContent=n;b.hidden=!n}
+function lineTotal(l){return byId(l.id).price*l.qty}
+function totals(){var sub=cart.reduce(function(a,l){return a+lineTotal(l)},0);return {sub:sub,disc:0,ship:0,total:sub}}
+function maxQty(id,skip){var p=byId(id),o=0;cart.forEach(function(l,i){if(l.id===id&&i!==skip)o+=l.qty});return Math.max(0,Math.min(10,Number(p&&p.stock)||0)-o)}
+function addToCart(id,size,qty){var f=cart.filter(function(l){return l.id===id&&l.size===size})[0],cap=maxQty(id,f?cart.indexOf(f):-1),cur=f?f.qty:0,add=Math.max(0,Math.min(qty,cap-cur));if(add<=0)return 0;if(f)f.qty=cur+add;else cart.push({id:id,size:size,qty:add});saveCart();return add}
+var toastT;function toast(h){var t=$("#toast");t.innerHTML=h;t.classList.add("show");clearTimeout(toastT);toastT=setTimeout(function(){t.classList.remove("show")},4500)}
+function sizeText(s){return s==="One size"?s:(/^\d+$/.test(s)?"Ring size "+s:s)}
+var CATIMG={ring:"rings_banner.jpg",necklace:"necklace_banner.jpg",earrings:"earings_banner.jpg",bracelet:"bracelet_banner.jpg"};
+function qbar(p){return '<div class="qbar"><button type="button" class="qbtn" data-qadd="'+esc(p.id)+'">+ Quick add</button></div>'}
+function quickAdd(p,size){var added=addToCart(p.id,size,1);if(!added)toast("You already have all "+esc(String(p.stock))+" available of "+esc(p.name)+' in your cart. <a href="#/cart">View cart</a>');else toast(esc(p.name)+' added to your cart. <a href="#/cart">View cart</a>')}
+document.addEventListener("click",function(e){var b=e.target.closest("[data-qadd],[data-qsize],[data-qback]");if(!b)return;e.preventDefault();e.stopPropagation();var bar=b.closest(".qbar");
+if(b.dataset.qadd){var p=byId(b.dataset.qadd);if(!p)return;if(p.cat==="ring"){bar.innerHTML='<span class="qlbl">Size</span>'+CONFIG.ringSizes.map(function(z){return '<button type="button" class="qs" data-qsize="'+esc(z)+'" data-id="'+esc(p.id)+'">'+esc(z)+'</button>'}).join('');return}quickAdd(p,"One size")}
+else if(b.dataset.qsize){quickAdd(byId(b.dataset.id),b.dataset.qsize);bar.innerHTML='<button type="button" class="qbtn" data-qadd="'+esc(b.dataset.id)+'">+ Quick add</button>'}
+},true);
+function stickyBar(p){
+  if(!inStock(p))return;var tgt=$(".pdp [data-add]");if(!tgt)return;
+  var bar=document.createElement("div");bar.className="sticky-bar";
+  bar.innerHTML='<div class="sb-info"><strong>'+esc(p.name)+'</strong><span>'+money(p.price)+'</span></div><button type="button" class="btn">Add to cart</button>';
+  document.body.appendChild(bar);var io=null;
+  function cleanup(){if(io)io.disconnect();bar.remove();document.body.classList.remove("has-sticky")}
+  window.addEventListener("hashchange",cleanup,{once:true});
+  bar.querySelector("button").addEventListener("click",function(){if(p.cat==="ring"&&!$('input[name="size"]:checked')){tgt.scrollIntoView({behavior:"smooth",block:"center"});return}tgt.click()});
+  if("IntersectionObserver" in window){io=new IntersectionObserver(function(es){var vis=!es[0].isIntersecting&&es[0].boundingClientRect.top<0;bar.classList.toggle("show",vis);document.body.classList.toggle("has-sticky",vis)},{threshold:0});io.observe(tgt)}
+}
+function sizeList(p){return p.cat==="ring"?CONFIG.ringSizes:["One size"]}
+
+/* ---------- Google Sheet sending (unchanged logic) ---------- */
+function sheetOn(){return /^https:\/\/script\.google\.com\/macros\/s\/[^\s]+\/exec$/.test(CONFIG.sheetEndpoint)}
+function postSheet(payload){
+  payload.key=CONFIG.sheetKey;
+  var ctl=("AbortController" in window)?new AbortController():null,timer;
+  var req=fetch(CONFIG.sheetEndpoint,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload),keepalive:true,signal:ctl?ctl.signal:undefined}).then(function(){return true});
+  var to=new Promise(function(res,rej){timer=setTimeout(function(){if(ctl)ctl.abort();rej(new Error("timeout"))},15000)});
+  return Promise.race([req,to]).then(function(r){clearTimeout(timer);return r},function(e){clearTimeout(timer);throw e});
+}
+function sendOrQueue(payload){
+  if(!sheetOn())return Promise.resolve(false);
+  return postSheet(payload).then(function(){return true}).catch(function(){var q=store(true,"sparkles_queue")||[];q.push(payload);store(false,"sparkles_queue",q);return false});
+}
+function flushQueue(){if(!sheetOn())return;var q=store(true,"sparkles_queue")||[];if(!q.length)return;store(false,"sparkles_queue",[]);q.forEach(function(p){sendOrQueue(p)})}
+window.addEventListener("online",flushQueue);
+/* ---------- Ziina online payments via the same Apps Script (unchanged logic) ---------- */
+function zinaOn(){return sheetOn()&&!!CONFIG.payments.online}
+function postSheetJSON(payload,ms){
+  payload.key=CONFIG.sheetKey;
+  var ctl=("AbortController" in window)?new AbortController():null,timer;
+  var req=fetch(CONFIG.sheetEndpoint,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload),signal:ctl?ctl.signal:undefined}).then(function(r){return r.json()});
+  var to=new Promise(function(res,rej){timer=setTimeout(function(){if(ctl)ctl.abort();rej(new Error("timeout"))},ms||20000)});
+  return Promise.race([req,to]).then(function(r){clearTimeout(timer);return r},function(e){clearTimeout(timer);throw e});
+}
+
+/* ---------- fragments ---------- */
+function priceHTML(p){
+  var o=Number(p.off);if(!(o>0&&o<100))return '<span class="pbox"><span>'+money(p.price)+'</span></span>';
+  return '<span class="pbox"><s>'+money(Math.round(p.price/(1-o/100)))+'</s><span>'+money(p.price)+'</span><span class="off">'+o+'% off</span></span>';
+}
+function stockLabel(p){
+  if(!inStock(p))return '<span class="stock oos">Sold out</span>';
+  var n=Number(p.stock);
+  return lowStock(p)?'<span class="stock low">Only '+n+' left</span>':'<span class="stock">'+n+' in stock</span>';
+}
+function card(p){
+  var oos=!inStock(p);
+  return '<a class="card'+(oos?' oos':'')+'" data-cat="'+p.cat+'" href="#/piece/'+p.id+'"><div class="ph">'+(oos?'<span class="tag">Sold out</span>':lowStock(p)?'<span class="tag low">Only '+p.stock+' left</span>':'')+art(p)+(oos?'':qbar(p))+'</div><div class="meta"><h3>'+esc(p.name)+'</h3>'+priceHTML(p)+'</div><p>'+esc(p.short)+'</p>'+stockLabel(p)+'</a>';
+}
+function orderSteps(){
+  return '<ol class="steps"><li><h3>Choose your piece</h3><p>Pick a piece and select your ring size where needed.</p></li><li><h3>Add to cart</h3><p>Keep browsing and add as many pieces as you like.</p></li><li><h3>Enter your details</h3><p>Add your full name, phone number and complete delivery address.</p></li><li><h3>Pay by card or cash</h3><p>We confirm and deliver in '+esc(CONFIG.deliveryDays)+'. Pay online by card, or in cash on arrival.</p></li></ol>';
+}
+function renderFooter(){
+  var c='<li><b>Phone</b>'+esc(CONFIG.phoneDisplay)+'</li>';
+  if(hasWA())c+='<li><b>WhatsApp</b><a href="'+waLink()+'" target="_blank" rel="noopener">Chat with us</a></li>';
+  c+='<li><b>Email</b><a href="mailto:'+esc(CONFIG.email)+'">'+esc(CONFIG.email)+'</a></li>';
+  if(CONFIG.instagram)c+='<li><b>Instagram</b><a href="https://instagram.com/'+esc(CONFIG.instagram)+'" target="_blank" rel="noopener">@'+esc(CONFIG.instagram)+'</a></li>';
+  c+='<li><b>Hours</b>'+esc(CONFIG.hours)+'</li>';
+  $("#footer").innerHTML='<div class="wrap"><div class="fgrid"><div><a class="brand" href="#/"><span class="lg"><img src="images/sparkles_logo.jpg" alt="" width="150" height="150"></span><span class="wm"><b>Sparkles</b><small>BY SIRAA</small></span></a><p>Fine jewellery, delivered to your door. Pay by card, or in cash when your order arrives.</p></div><div><h4>Help</h4><ul><li><a href="#/how-to-order">How to order</a></li><li><a href="#/shipping">Shipping &amp; delivery</a></li><li><a href="#/faq">FAQ</a></li><li><a href="#/contact">Contact us</a></li></ul></div><div><h4>Contact</h4><ul>'+c+'</ul></div></div><div class="fbar"><span>&copy; '+new Date().getFullYear()+' Sparkles by Siraa. All rights reserved.</span><nav aria-label="Legal"><a href="#/privacy">Privacy policy</a><a href="#/terms">Terms &amp; conditions</a><a href="#/shipping">Shipping</a></nav><span>Card payment &amp; cash on delivery</span></div></div>';
+}
+
+/* ---------- pages ---------- */
+function followHTML(){
+  var ig="https://instagram.com/"+esc(CONFIG.instagram);
+  var pick=[2,17,45,30,60,8].map(function(i){return PRODUCTS[i%PRODUCTS.length]}).filter(function(p){return p&&p.image});
+  var tiles=pick.map(function(p,i){return '<a class="ig-tile t'+i+'" href="'+ig+'" target="_blank" rel="noopener" aria-label="See more on Instagram"><img src="images/'+esc(p.image)+'" alt="" loading="lazy"><span class="ig-ov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></svg></span></a>'}).join('');
+  return '<section class="section follow" style="padding-top:0"><div class="wrap"><div class="follow-box"><div class="follow-top"><span class="ig-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></svg></span><span class="eyebrow">Follow along</span><h2>Sparkle with us on <em>Instagram</em></h2><p>New arrivals, styling ideas and behind-the-scenes, first on our page.</p><a class="ig-handle" href="'+ig+'" target="_blank" rel="noopener">@'+esc(CONFIG.instagram)+'</a></div><div class="ig-grid">'+tiles+'</div><div class="follow-cta"><a class="btn" href="'+ig+'" target="_blank" rel="noopener">Follow us on Instagram →</a></div></div></div></section>';
+}
+var pages={};
+pages.home=function(){
+  var feat=PRODUCTS.filter(inStock).slice(0,4);
+  var cats=Object.keys(CATS).map(function(k){var p=PRODUCTS.filter(function(x){return x.cat===k})[0];return '<a class="cat" href="#/shop/'+k+'"><img src="images/'+CATIMG[k]+'" alt="'+CATS[k]+'" loading="lazy" width="600" height="750"><h3>'+CATS[k]+'</h3></a>'}).join('');
+  return {title:"Sparkles by Siraa | Fine Jewellery in the UAE",html:
+  '<section class="hero"><div class="hero-media" aria-hidden="true"></div><div class="wrap"><div class="hcopy"><span class="eyebrow">Jewels crafted</span><h1>Jewellery made to be <em>kept</em></h1><p>Rings, necklaces, earrings and bracelets in gold, rose gold and silver. Delivered free across the UAE.</p><a class="btn" href="#/shop">Shop the collection →</a></div></div><button type="button" class="scroll-cue" id="scrollCue" aria-label="Scroll down"><span>Scroll</span><i></i></button></section>'+
+  '<div class="trust"><div class="wrap"><ul><li><strong>UAE delivery</strong><span>Free, in '+esc(CONFIG.deliveryDays)+'</span></li><li><strong>Secure checkout</strong><span>Card or cash on delivery</span></li><li><strong>Crafted with care</strong><span>Quality metals, finished by hand</span></li><li><strong>Customer support</strong><span>Here to help, any time</span></li></ul></div></div>'+
+  '<section class="section"><div class="wrap"><div class="sec-head"><h2>Shop by piece</h2><p>Find what you are looking for.</p></div><div class="cats">'+cats+'</div></div></section>'+
+  '<section class="section" style="padding-top:0"><div class="wrap"><div class="sec-head"><h2>New arrivals</h2><a class="btn line" href="#/shop">View all →</a></div><div class="cards">'+feat.map(card).join('')+'</div></div></section>'+
+  '<section class="story"><div class="hero-media story-media" aria-hidden="true"></div><div class="wrap story-grid"><div><h2>Quiet pieces for the moments you remember.</h2><p>Every Sparkles piece is designed to be worn daily and handed down, with clean lines and stones chosen to catch the light.</p></div></div></section>'+
+  '<section class="section"><div class="wrap"><div class="sec-head"><h2>Ordering is simple</h2><p>Order online and pay by card, or in cash when it arrives.</p></div>'+orderSteps()+'</div></section>'+
+  followHTML()};
+};
+pages.shop=function(arg){
+  var f=CATS[arg]?arg:"all";
+  var tabs='<div class="filters" role="group" aria-label="Filter by type"><button type="button" data-f="all" aria-pressed="'+(f==="all")+'">All</button>'+Object.keys(CATS).map(function(k){return '<button type="button" data-f="'+k+'" aria-pressed="'+(f===k)+'">'+CATS[k]+'</button>'}).join('')+'</div>';
+  return {title:"Shop | Sparkles by Siraa",html:
+  '<div class="wrap"><div class="page-head shop-banner"><nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span>Shop</nav><h1>The collection</h1><p>Rings, necklaces, earrings and bracelets, all with free UAE delivery.</p></div>'+tabs+
+  '<div class="cards" id="grid" style="padding-bottom:100px">'+PRODUCTS.map(function(p){var h=card(p);return f==="all"||p.cat===f?h:h.replace('class="card','hidden class="card')}).join('')+'</div></div>',
+  init:function(){$(".filters").addEventListener("click",function(e){var b=e.target.closest("button[data-f]");if(!b)return;var k=b.dataset.f;$$(".filters button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});$$("#grid .card").forEach(function(c){c.hidden=!(k==="all"||c.dataset.cat===k)})})}};
+};
+pages.piece=function(id){
+  var p=byId(id);if(!p)return pages.notfound();
+  var oos=!inStock(p),ring=p.cat==="ring",buy;
+  if(oos){buy='<div class="notice" style="margin-top:28px"><strong>Currently sold out.</strong> Message us to ask when it will be back in stock.</div><div class="buy"><a class="btn block" '+(hasWA()?'target="_blank" rel="noopener" href="'+waLink("Hello Sparkles by Siraa, when will "+p.name+" be back in stock?")+'"':'href="#/contact"')+'>Message us about this piece</a></div>'}
+  else{
+    var sz=sizeList(p).map(function(s){var on=ring?p.sizes[s]!==0:true;return '<label class="'+(on?'':'un')+'"><input type="radio" name="size" value="'+s+'"'+(!ring&&on?' checked':'')+(on?'':' disabled aria-label="'+s+', unavailable"')+'><span>'+s+'</span></label>'}).join('');
+    buy='<div class="opt"><div class="opt-l"><span id="szl">'+(ring?'Select your ring size':'Size')+'</span>'+(ring?'<a href="#size-guide" data-open style="font-size:14px;color:var(--mute)">Size guide</a>':'')+'</div><fieldset class="sizes" aria-labelledby="szl">'+sz+'</fieldset><p class="err" id="szerr" role="alert"></p></div>'+
+    '<div class="opt"><div class="opt-l"><span>Quantity</span></div><div class="qty"><button type="button" data-q="-1" aria-label="Decrease quantity">&minus;</button><output id="qv" aria-live="polite">1</output><button type="button" data-q="1" aria-label="Increase quantity">+</button></div></div>'+
+    '<div class="buy"><button class="btn block" type="button" data-add>Add to cart</button><button class="btn gold block" type="button" data-buy>Buy now</button></div>';
+  }
+  var others=PRODUCTS.filter(function(x){return x.id!==p.id&&x.cat!==p.cat}).slice(0,3);
+  return {title:p.name+" | Sparkles by Siraa",html:
+  '<div class="wrap"><div class="page-head" style="padding-bottom:22px"><nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span><a href="#/shop/'+p.cat+'">'+CATS[p.cat]+'</a><span>/</span>'+esc(p.name)+'</nav></div>'+
+  '<div class="pdp"><div class="ph">'+art(p)+'</div><div><h1>'+esc(p.name)+'</h1>'+priceHTML(p)+stockLabel(p)+'<p class="short">'+esc(p.short)+'</p>'+buy+
+  '<ul class="assure"><li>Card payment or cash on delivery available</li><li>Free delivery in '+esc(CONFIG.deliveryDays)+'</li></ul>'+
+  '<div style="margin-top:30px">'+(ring?'<details class="acc" id="size-guide"><summary>Ring size guide</summary><div class="body"><p>Sizes 5 to 9 follow the US scale. Measure a ring that fits you well, or wrap a strip of paper round your finger and compare. If you are between two sizes, choose the larger. Message us if you would like help choosing.</p></div></details>':'')+
+  '<details class="acc"><summary>Care</summary><div class="body"><p>Keep your jewellery dry and store each piece on its own. Put it on after perfume and lotion, and wipe it with a soft cloth after wearing.</p></div></details>'+
+  '<details class="acc"><summary>Delivery &amp; payment</summary><div class="body"><p>Delivery takes '+esc(CONFIG.deliveryDays)+' and is free across the UAE. Pay securely by card online, or in cash to the courier when your order arrives.</p></div></details></div></div></div>'+
+  '<div class="sec-head"><h2>You may also like</h2></div><div class="cards" style="grid-template-columns:repeat(3,minmax(0,1fr));padding-bottom:100px">'+others.map(card).join('')+'</div></div>',
+  init:function(){
+    stickyBar(p);
+    var qty=1,root=$(".pdp");
+    root.addEventListener("click",function(e){
+      var t=e.target.closest("[data-q],[data-add],[data-buy],[data-open]");if(!t)return;
+      if(t.dataset.q){qty=Math.max(1,Math.min(Math.min(10,Math.max(1,Number(p.stock)||1)),qty+Number(t.dataset.q)));$("#qv").textContent=qty}
+      else if(t.hasAttribute("data-open")){e.preventDefault();var d=$("#size-guide");d.open=true;d.scrollIntoView({behavior:"smooth",block:"center"})}
+      else{
+        var sel=$('input[name="size"]:checked'),se=$("#szerr");
+        if(!sel){se.textContent="Please select a size before adding to cart.";return}
+        se.textContent="";
+        var added=addToCart(p.id,sel.value,qty);
+        if(!added){toast("You already have all "+esc(String(p.stock))+" available of "+esc(p.name)+' in your cart. <a href="#/cart">View cart</a>');return}
+        if(t.hasAttribute("data-buy"))location.hash="#/checkout";
+        else toast(esc(p.name)+' added to your cart. <a href="#/cart">View cart</a>');
+      }
+    });
+  }};
+};
+pages.cart=function(){
+  if(!cart.length)return {title:"Your cart | Sparkles by Siraa",html:'<div class="wrap empty"><h1>Your cart is empty</h1><p>Browse the collection and add a piece you love.</p><a class="btn" href="#/shop">Shop the collection</a></div>'};
+  var t=totals();
+  var lines=cart.map(function(l,i){var p=byId(l.id);
+    return '<div class="line"><a class="thumb" href="#/piece/'+p.id+'">'+art(p)+'</a><div><h3>'+esc(p.name)+'</h3><p class="sub">'+esc(sizeText(l.size))+' &middot; '+money(p.price)+' each'+(lowStock(p)?' &middot; Only '+p.stock+' left':'')+'</p><div class="qty"><button type="button" data-cq="'+i+'" data-d="-1" aria-label="Decrease quantity of '+esc(p.name)+'">&minus;</button><output>'+l.qty+'</output><button type="button" data-cq="'+i+'" data-d="1" aria-label="Increase quantity of '+esc(p.name)+'">+</button></div><button class="link rm" type="button" data-rm="'+i+'">Remove</button></div><div class="tot">'+money(lineTotal(l))+'</div></div>'}).join('');
+  return {title:"Your cart | Sparkles by Siraa",html:'<div class="wrap"><div class="page-head"><nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span>Cart</nav><h1>Your cart</h1></div><div class="grid2"><div>'+lines+'<p style="margin-top:22px"><a href="#/shop" class="link">Continue shopping</a></p></div><aside class="summary" aria-label="Order summary"><h2>Order summary</h2><div class="sr"><span>Subtotal</span><span>'+money(t.sub)+'</span></div><div class="sr"><span>Shipping &amp; handling</span><span>Free</span></div><div class="sr t"><span>Total</span><strong style="font-weight:500">'+money(t.total)+'</strong></div><p class="note">Choose how to pay at checkout: securely by card online, or in cash when your order arrives.</p><a class="btn block" href="#/checkout">Proceed to checkout</a></aside></div></div>'};
+};
+function fld(id,label,o){
+  o=o||{};var req=o.req!==false;
+  var attr=' id="'+id+'" name="'+id+'"'+(req?' required':'')+(o.ac?' autocomplete="'+o.ac+'"':'')+' aria-describedby="e-'+id+'"'+(o.ph?' placeholder="'+esc(o.ph)+'"':''),ctl;
+  if(o.select)ctl='<select'+attr+'><option value="">Select…</option>'+o.select.map(function(x){return '<option>'+esc(x)+'</option>'}).join('')+'</select>';
+  else if(o.area)ctl='<textarea'+attr+'></textarea>';
+  else ctl='<input type="'+(o.type||"text")+'"'+(o.im?' inputmode="'+o.im+'"':'')+attr+'>';
+  return '<div class="f'+(o.full?' full':'')+'"><label for="'+id+'">'+label+(req?'':' <i>(optional)</i>')+'</label>'+ctl+'<p class="err" id="e-'+id+'"></p></div>';
+}
+function summaryMini(){
+  var t=totals();
+  return '<aside class="summary"><h2>Your order</h2>'+cart.map(function(l){var p=byId(l.id);return '<div class="mini"><span class="thumb">'+art(p)+'</span><div>'+esc(p.name)+'<small>'+esc(sizeText(l.size))+' &middot; Qty '+l.qty+'</small></div><span>'+money(lineTotal(l))+'</span></div>'}).join('')+'<div style="border-top:1px solid var(--line);margin-top:10px;padding-top:10px"><div class="sr"><span>Subtotal</span><span>'+money(t.sub)+'</span></div><div class="sr"><span>Shipping &amp; handling</span><span>Free</span></div><div class="sr t"><span>Total</span><strong style="font-weight:500">'+money(t.total)+'</strong></div></div><p class="note"><a href="#/cart" class="link">Edit cart</a></p></aside>';
+}
+pages.checkout=function(){
+  if(!cart.length){location.replace("#/cart");return {title:"Cart | Sparkles by Siraa",html:""}}
+  var t=totals(),pays="",any=false;
+  if(CONFIG.payments.online&&zinaOn()){pays+='<label class="pay"><input type="radio" name="payment" value="Online payment" checked><div><strong>Pay online now</strong><span>Pay securely by card, Apple Pay or Google Pay. You will be redirected to our payment page.</span></div></label>';any=true}
+  if(CONFIG.payments.cod)pays+='<label class="pay"><input type="radio" name="payment" value="Cash on delivery"'+(any?'':' checked')+'><div><strong>Cash on delivery</strong><span>Pay in cash to our courier when your order arrives. Please keep the exact amount ready.</span></div></label>';
+  if(CONFIG.payments.cardOnDelivery)pays+='<label class="pay"><input type="radio" name="payment" value="Card on delivery"'+(any||CONFIG.payments.cod?'':' checked')+'><div><strong>Card on delivery</strong><span>Pay by card using the courier’s card machine when your order arrives.</span></div></label>';
+  var hint=(CONFIG.payments.online&&zinaOn())?"You can pay securely online now, or choose to pay when your order arrives.":"No online payment is taken.";
+  return {title:"Checkout | Sparkles by Siraa",html:
+  '<div class="wrap"><div class="page-head"><nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span><a href="#/cart">Cart</a><span>/</span>Checkout</nav><h1>Checkout</h1></div><div class="grid2"><form id="co" novalidate>'+
+  '<div class="notice"><strong>Please fill in every detail carefully.</strong> Your full name, phone number and complete address help our courier find you quickly.</div>'+
+  '<fieldset><legend>Your details</legend><p class="hint">We will contact you on this number to confirm your order.</p><div class="fields">'+fld("fullName","Full name",{ac:"name",full:true,ph:"As it should appear on the delivery"})+fld("phone","Mobile number",{type:"tel",im:"tel",ac:"tel",ph:"e.g. 050 123 4567"})+fld("whatsapp","WhatsApp number",{type:"tel",im:"tel",req:false,ph:"If different from mobile"})+fld("email","Email address",{type:"email",ac:"email",full:true})+'</div></fieldset>'+
+  '<fieldset><legend>Delivery address</legend><p class="hint">Delivery within the United Arab Emirates.</p><div class="fields">'+fld("emirate","Emirate",{select:CONFIG.emirates,ac:"address-level1"})+fld("area","City / area",{ac:"address-level2",ph:"e.g. Al Reem Island"})+fld("street","Street, building name or villa number",{ac:"address-line1",full:true})+fld("unit","Apartment / floor / unit",{ac:"address-line2",req:false})+fld("landmark","Nearest landmark",{req:false,ph:"e.g. Next to the mosque"})+fld("mapLink","Google Maps location link",{type:"url",req:false,full:true,ph:"Optional: share your pin to help the courier"})+fld("deliveryNotes","Delivery instructions",{area:true,req:false,full:true,ph:"Gate code, best time to call"})+'</div></fieldset>'+
+  '<fieldset><legend>Payment</legend><p class="hint">'+esc(hint)+'</p>'+pays+'</fieldset>'+
+  '<fieldset><legend>Anything else?</legend><div class="fields"><div class="f full"><label for="orderNote">Order note <i>(optional)</i></label><textarea id="orderNote" name="orderNote" placeholder="Gift note, or questions about your order"></textarea></div></div></fieldset>'+
+  '<label class="check"><input type="checkbox" id="agree" required aria-describedby="e-agree"><span>I have checked my details and agree to the <a href="#/terms" target="_blank">terms &amp; conditions</a> and <a href="#/privacy" target="_blank">privacy policy</a>.</span></label><p class="err" id="e-agree" style="margin-bottom:20px"></p>'+
+  '<button class="btn block" type="submit" id="place">Place order &middot; '+money(t.total)+'</button><p class="err" id="formerr" role="alert" style="margin-top:12px"></p></form>'+summaryMini()+'</div></div>',
+  init:function(){$("#co").addEventListener("submit",submitOrder);$("#co").addEventListener("input",function(e){if(e.target.id)setErr(e.target.id,"")})}};
+};
+function setErr(id,msg){var e=$("#e-"+id),f=document.getElementById(id);if(e)e.textContent=msg;if(f)f.setAttribute("aria-invalid",msg?"true":"false")}
+function validate(v){
+  var er={};
+  if(v.fullName.trim().split(/\s+/).filter(Boolean).length<2||v.fullName.trim().length<5)er.fullName="Enter your full name (first and last name).";
+  if(!/^\d{9,15}$/.test(v.phone.replace(/[\s\-()+]/g,"")))er.phone="Enter a valid mobile number with 9 to 15 digits.";
+  if(v.whatsapp&&!/^\d{9,15}$/.test(v.whatsapp.replace(/[\s\-()+]/g,"")))er.whatsapp="Enter a valid WhatsApp number or leave it empty.";
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.email.trim()))er.email="Enter a valid email address.";
+  if(!v.emirate)er.emirate="Select your emirate.";
+  if(v.area.trim().length<2)er.area="Enter your city or area.";
+  if(v.street.trim().length<4)er.street="Enter your street, building name or villa number.";
+  if(v.mapLink&&!/^https?:\/\/\S+$/i.test(v.mapLink.trim()))er.mapLink="Enter a full link starting with https://";
+  return er;
+}
+function orderText(o){
+  var L=["*New Sparkles by Siraa order "+o.id+"*","","Name: "+o.customer.fullName,"Mobile: "+o.customer.phone+(o.customer.whatsapp?" | WhatsApp: "+o.customer.whatsapp:""),"Email: "+o.customer.email,"","Address: "+[o.address.street,o.address.unit,o.address.area,o.address.emirate].filter(Boolean).join(", "),o.address.landmark?"Landmark: "+o.address.landmark:"",o.address.mapLink?"Map: "+o.address.mapLink:"",o.address.notes?"Delivery notes: "+o.address.notes:"","","Items:"].concat(o.items.map(function(i){return "- "+i.name+" | "+i.size+" | qty "+i.qty+" | "+money(i.price*i.qty)}));
+  L.push("","Subtotal: "+money(o.totals.sub),"Delivery: Free","Total: "+money(o.totals.total),"Payment: "+o.payment);
+  if(o.note)L.push("Note: "+o.note);
+  return L.filter(function(x,i,a){return x!==""||a[i-1]!==""}).join("\n");
+}
+function orderSheetPayload(order){
+  return {type:"order",orderId:order.id,date:order.date,name:order.customer.fullName,phone:order.customer.phone,whatsapp:order.customer.whatsapp,email:order.customer.email,emirate:order.address.emirate,area:order.address.area,street:order.address.street,unit:order.address.unit,landmark:order.address.landmark,mapLink:order.address.mapLink,deliveryNotes:order.address.notes,
+    items:order.items.map(function(i){return i.name+" | Size "+i.size+" | Qty "+i.qty+" | "+money(i.price*i.qty)}).join("\n"),itemCount:order.items.reduce(function(a,i){return a+i.qty},0),subtotal:order.totals.sub,discount:order.totals.disc||0,offers:"",delivery:order.totals.ship,total:order.totals.total,payment:order.payment,orderNote:order.note};
+}
+var lastOrder=null;
+function finalizeOrder(order,sent){
+  order.sent=sent;var all=store(true,"sparkles_orders")||[];all.push(order);store(false,"sparkles_orders",all);store(false,"sparkles_last",order);
+  cart=[];saveCart();lastOrder=order;location.hash="#/confirmation";
+}
+function submitOrder(e){
+  e.preventDefault();
+  var g=function(id){var el=document.getElementById(id);return el?el.value:""};
+  var v={fullName:g("fullName"),phone:g("phone"),whatsapp:g("whatsapp"),email:g("email"),emirate:g("emirate"),area:g("area"),street:g("street"),unit:g("unit"),landmark:g("landmark"),mapLink:g("mapLink"),deliveryNotes:g("deliveryNotes"),orderNote:g("orderNote")};
+  var er=validate(v),first=null;
+  ["fullName","phone","whatsapp","email","emirate","area","street","mapLink"].forEach(function(k){setErr(k,er[k]||"");if(er[k]&&!first)first=k});
+  var ag=$("#agree");$("#e-agree").textContent=ag.checked?"":"Please tick the box to confirm your details and accept the terms.";if(!ag.checked&&!first)first="agree";
+  if(first){$("#formerr").textContent="Please fix the highlighted fields and try again.";document.getElementById(first).focus();return}
+  $("#formerr").textContent="";
+  var t=totals(),d=new Date();
+  var id="ROH-"+String(d.getFullYear()).slice(2)+("0"+(d.getMonth()+1)).slice(-2)+("0"+d.getDate()).slice(-2)+"-"+Math.floor(1000+Math.random()*9000);
+  var pm=$('input[name="payment"]:checked'),payVal=pm?pm.value:"Cash on delivery";
+  var order={id:id,date:d.toISOString(),customer:{fullName:v.fullName.trim(),phone:v.phone.trim(),whatsapp:v.whatsapp.trim(),email:v.email.trim()},address:{emirate:v.emirate,area:v.area.trim(),street:v.street.trim(),unit:v.unit.trim(),landmark:v.landmark.trim(),mapLink:v.mapLink.trim(),notes:v.deliveryNotes.trim(),country:"United Arab Emirates"},items:cart.map(function(l){var p=byId(l.id);return {id:l.id,name:p.name,size:l.size,qty:l.qty,price:p.price}}),totals:t,payment:payVal,note:v.orderNote.trim(),sent:false};
+  var btn=$("#place");btn.disabled=true;
+  if(payVal==="Online payment"&&zinaOn()){
+    btn.textContent="Redirecting to secure payment…";
+    var base=location.href.split("#")[0];
+    var successUrl=base+"#/payment-return?order="+encodeURIComponent(id),cancelUrl=base+"#/payment-return?order="+encodeURIComponent(id)+"&cancelled=1";
+    store(false,"sparkles_pending_order",order);
+    postSheetJSON({type:"payment_intent",orderId:id,amount:Math.round(t.total*100),successUrl:successUrl,cancelUrl:cancelUrl}).then(function(res){
+      if(res&&res.ok&&res.redirect_url){store(false,"sparkles_pending_pi",res.id||"");window.location.href=res.redirect_url}
+      else{btn.disabled=false;btn.textContent="Place order · "+money(t.total);$("#formerr").textContent=(res&&res.error)||"Could not start online payment. Please try again or choose cash on delivery."}
+    }).catch(function(){btn.disabled=false;btn.textContent="Place order · "+money(t.total);$("#formerr").textContent="Could not reach the payment system. Please check your connection and try again."});
+    return;
+  }
+  btn.textContent="Placing your order…";
+  function finish(sent){finalizeOrder(order,sent)}
+  if(sheetOn())sendOrQueue(orderSheetPayload(order)).then(finish);else finish(false);
+}
+pages.confirmation=function(){
+  var o=lastOrder||store(true,"sparkles_last");
+  if(!o)return {title:"Order | Sparkles by Siraa",html:'<div class="wrap empty"><h1>No recent order</h1><p>Your order confirmation will appear here after you place an order.</p><a class="btn" href="#/shop">Shop the collection</a></div>'};
+  var txt=orderText(o),first=o.customer.fullName.split(" ")[0],send="";
+  var wa=hasWA()?'<div class="actions"><a class="btn" href="'+waLink("Hello Sparkles by Siraa, this is about my order "+o.id)+'" target="_blank" rel="noopener">Chat with us on WhatsApp</a></div>':"";
+  if(o.sent)send='<div class="notice"><strong>Your order has been received.</strong> There is nothing else you need to do. We will contact you shortly to confirm it.</div>'+wa;
+  else{
+    var b="";if(hasWA())b+='<a class="btn" href="'+waLink(txt)+'" target="_blank" rel="noopener">Send order on WhatsApp</a>';
+    b+='<a class="btn line" href="mailto:'+esc(CONFIG.email)+'?subject='+encodeURIComponent("New Sparkles by Siraa order "+o.id)+'&body='+encodeURIComponent(txt)+'">Send order by email</a>';
+    send='<div class="notice"><strong>'+(sheetOn()?'We could not reach our order system.':'One last step: send us your order.')+'</strong> '+(sheetOn()?'Your order is saved on this device and will retry automatically. To be safe, tap a button below so we receive it right away.':'Tap a button below so your order reaches us.')+'</div><div class="actions">'+b+'</div>';
+  }
+  return {title:"Order received | Sparkles by Siraa",html:'<div class="narrow done" style="padding:clamp(40px,7vw,80px) 0 100px"><h1>Thank you, '+esc(first)+'.</h1><p style="color:var(--mute);margin:16px 0 0">We have your order and will contact you to confirm it. Keep your phone nearby.</p><span class="orderid">'+esc(o.id)+'</span><div style="margin-top:26px">'+send+'</div>'+
+  '<div class="box"><h2>Order details</h2><dl>'+o.items.map(function(i){return '<dt>'+esc(i.name)+'</dt><dd>'+esc(sizeText(i.size))+' &middot; Qty '+i.qty+' &middot; '+money(i.price*i.qty)+'</dd>'}).join('')+'<dt>Shipping &amp; handling</dt><dd>Free</dd><dt>Total</dt><dd><strong>'+money(o.totals.total)+'</strong> ('+esc(o.payment)+')</dd></dl></div>'+
+  '<div class="box"><h2>Delivering to</h2><dl><dt>Name</dt><dd>'+esc(o.customer.fullName)+'</dd><dt>Mobile</dt><dd>'+esc(o.customer.phone)+'</dd><dt>Email</dt><dd>'+esc(o.customer.email)+'</dd><dt>Address</dt><dd>'+esc([o.address.street,o.address.unit,o.address.area,o.address.emirate,"United Arab Emirates"].filter(Boolean).join(", "))+'</dd></dl></div>'+
+  '<div class="actions"><button class="btn line" type="button" onclick="window.print()">Print this page</button><a class="btn" href="#/shop">Continue shopping</a></div></div>'};
+};
+function faqItems(){return [
+ ["How do I place an order?","Choose a piece, select your ring size if needed and add it to your cart. At checkout, enter your name, phone number and full address, then place your order. We will contact you to confirm."],
+ ["What payment methods do you accept?","You can pay securely online by card at checkout, or choose cash on delivery and pay the courier when your order arrives. For cash, please keep the exact amount ready."],
+ ["How long does delivery take?","Delivery takes "+CONFIG.deliveryDays+" after your order is confirmed."],
+ ["How much is delivery?","Delivery is free on every order, across the UAE."],
+ ["How do I choose my ring size?","Sizes 5 to 9 follow the US scale. If you are between two sizes, choose the larger. Message us if you would like help choosing."],
+ ["What if I am not home when the courier arrives?","The courier will call you first. Please keep your phone on and make sure the number you entered is correct."]]}
+function faqHTML(){return faqItems().map(function(f,i){return '<details class="acc"'+(i===0?' open':'')+'><summary>'+f[0]+'</summary><div class="body"><p>'+f[1]+'</p></div></details>'}).join('')}
+pages.contact=function(){
+  var c1='<div class="ccard"><h3>Call us</h3><p>'+esc(CONFIG.phoneDisplay)+'</p><p>'+esc(CONFIG.hours)+'</p></div>';
+  var c2='<div class="ccard"><h3>Message us</h3>'+(hasWA()?'<p><a href="'+waLink("Hello Sparkles by Siraa, I have a question.")+'" target="_blank" rel="noopener">WhatsApp</a></p>':'')+'<p><a href="mailto:'+esc(CONFIG.email)+'">'+esc(CONFIG.email)+'</a></p>'+(CONFIG.instagram?'<p><a href="https://instagram.com/'+esc(CONFIG.instagram)+'" target="_blank" rel="noopener">Instagram @'+esc(CONFIG.instagram)+'</a></p>':'')+'</div>';
+  return {title:"Contact | Sparkles by Siraa",html:'<div class="wrap"><div class="page-head"><nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span>Contact</nav><h1>Contact us</h1><p>Questions about a piece, sizing, or an order? We are happy to help.</p></div><div class="cgrid">'+c1+c2+'</div>'+
+  '<div class="cols2"><div><h2 style="font-size:38px;margin-bottom:20px">Send us a message</h2><form id="cf" novalidate><div class="fields">'+fld("cName","Your name",{full:true,ac:"name"})+fld("cEmail","Email address",{type:"email",ac:"email"})+fld("cPhone","Phone number",{type:"tel",req:false,ac:"tel"})+
+  '<div class="f full"><label for="cMsg">Message</label><textarea id="cMsg" name="cMsg" required aria-describedby="e-cMsg"></textarea><p class="err" id="e-cMsg"></p></div></div><p class="hint" style="margin-top:14px">'+(sheetOn()?'We will reply to you by email or phone.':'Sending opens your email app with your message ready to send.')+'</p><button class="btn" type="submit" id="csend">Send message</button><p class="err" id="cerr" role="alert" style="margin-top:12px"></p></form></div>'+
+  '<div><h2 style="font-size:38px;margin-bottom:20px">Common questions</h2>'+faqHTML()+'</div></div></div>',init:function(){
+    $("#cf").addEventListener("submit",function(e){
+      e.preventDefault();var n=$("#cName").value.trim(),m=$("#cEmail").value.trim(),msg=$("#cMsg").value.trim(),okm=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(m);
+      setErr("cName",n?"":"Enter your name.");setErr("cEmail",okm?"":"Enter a valid email address.");setErr("cMsg",msg?"":"Write your message.");
+      if(!n||!okm||!msg)return;
+      var body=msg+"\n\nFrom: "+n+"\nEmail: "+m+($("#cPhone").value?"\nPhone: "+$("#cPhone").value:"");
+      function viaEmail(){location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("Message from "+n)+"&body="+encodeURIComponent(body)}
+      if(!sheetOn()){viaEmail();return}
+      var sb=$("#csend");sb.disabled=true;sb.textContent="Sending…";
+      sendOrQueue({type:"enquiry",id:"ENQ-"+Date.now(),date:new Date().toISOString(),name:n,email:m,phone:$("#cPhone").value.trim(),message:msg}).then(function(ok){
+        if(ok)$("#cf").innerHTML='<div class="notice"><strong>Thank you, '+esc(n.split(" ")[0])+'.</strong> Your message has been sent. We will reply to you soon.</div>';
+        else{sb.disabled=false;sb.textContent="Send message";$("#cerr").textContent="We could not send your message. Your email app will open so you can send it directly.";setTimeout(viaEmail,1200)}
+      });
+    });
+  }};
+};
+pages.faq=function(){return {title:"FAQ | Sparkles by Siraa",html:'<div class="narrow" style="padding-bottom:100px"><div class="page-head" style="padding-left:0"><nav class="crumbs"><a href="#/">Home</a><span>/</span>FAQ</nav><h1>Frequently asked questions</h1></div>'+faqHTML()+'</div>'}};
+pages["how-to-order"]=function(){return {title:"How to order | Sparkles by Siraa",html:'<div class="wrap" style="padding-bottom:100px"><div class="page-head"><nav class="crumbs"><a href="#/">Home</a><span>/</span>How to order</nav><h1>How to order</h1><p>Order online in minutes and pay by card, or in cash when your order arrives.</p></div>'+orderSteps()+'<p style="margin-top:40px"><a class="btn" href="#/shop">Start shopping</a></p></div>'}};
+function policy(title,sections){return {title:title.replace(/&amp;/g,"&")+" | Sparkles by Siraa",html:'<div class="narrow prose" style="padding-bottom:100px"><div class="page-head" style="padding-left:0"><nav class="crumbs"><a href="#/">Home</a><span>/</span>'+title+'</nav><h1>'+title+'</h1></div>'+sections.map(function(s){return '<h2>'+s[0]+'</h2><p>'+s[1]+'</p>'}).join('')+'</div>'}}
+pages.shipping=function(){return policy("Shipping &amp; delivery",[["Where we deliver","We deliver to all emirates in the United Arab Emirates. Please enter your complete address at checkout."],["Delivery time","Orders are delivered in "+esc(CONFIG.deliveryDays)+" after we confirm them with you. Times may be longer during sales and public holidays."],["Delivery fee","Delivery is free on every order, across the United Arab Emirates."],["Payment options","Pay securely online by card at checkout, or choose cash on delivery and pay the courier when your order arrives. The courier will call you before arriving."],["Missed deliveries","If nobody is available to receive the order, we will try to arrange a second delivery. Repeated failed deliveries may lead to cancellation."]])};
+pages.privacy=function(){return policy("Privacy policy",[["What we collect","When you place an order or contact us, we collect your name, phone number, email address and delivery address, plus anything you write in your note or message."],["How we use it","We use your details to confirm and deliver your order, contact you about it, and reply to your questions. We do not sell your personal information."],["Who we share it with","We share your name, phone number and address with our delivery partners only so they can deliver your order."],["Your cart on this device","Your cart and most recent order are stored in your own browser. You can clear this by clearing your browser data."],["Your choices","You can ask us to update or delete your information at any time by emailing "+esc(CONFIG.email)+"."]])};
+pages.terms=function(){return policy("Terms &amp; conditions",[["Orders","Placing an order is an offer to buy. An order is confirmed once we contact you and confirm your details and availability."],["Prices","All prices are in "+esc(CONFIG.currency)+". The price shown when you place your order applies to that order."],["Payment","You can pay online by card at checkout, or in cash on delivery. The total shown at checkout is the amount you pay."],["Product colours","We do our best to show our jewellery accurately. Metals and stones may look slightly different on different screens."],["Contact","Questions about these terms? Email us at "+esc(CONFIG.email)+"."]])};
+pages.notfound=function(){return {title:"Page not found | Sparkles by Siraa",html:'<div class="wrap empty"><h1>We could not find that page</h1><p>The page may have moved. Try the collection instead.</p><a class="btn" href="#/shop">Shop the collection</a></div>'}};
+/* ---------- Ziina return page (unchanged logic) ---------- */
+pages["payment-return"]=function(arg,qs){return {title:"Confirming payment | Sparkles by Siraa",html:'<div class="narrow" style="padding:clamp(60px,8vw,110px) 0;text-align:center"><h1 id="pr-h">Confirming your payment…</h1><p style="color:var(--mute)" id="pr-p">Please wait a moment, this only takes a few seconds.</p><div class="actions" id="pr-actions" style="justify-content:center"></div></div>',init:function(){handlePaymentReturn(qs||"")}}};
+function prSet(h,p,a){var H=$("#pr-h"),P=$("#pr-p"),A=$("#pr-actions");if(H)H.textContent=h;if(P)P.textContent=p;if(A)A.innerHTML=a||""}
+function prHelp(id){return hasWA()?'<a class="btn" href="'+waLink("Hello Sparkles by Siraa, I paid online for order "+id+" and need help confirming it.")+'" target="_blank" rel="noopener">Message us on WhatsApp</a> ':''}
+function handlePaymentReturn(qs){
+  var qp=new URLSearchParams(qs),orderId=qp.get("order")||"",cancelled=qp.get("cancelled");
+  if(cancelled){prSet("Payment cancelled","You have not been charged. Your items are still in your cart, so you can try again or choose cash on delivery instead.",'<a class="btn" href="#/checkout">Back to checkout</a>');return}
+  var pending=store(true,"sparkles_pending_order");
+  if(!pending||pending.id!==orderId){prSet("We could not find that order","If you completed a payment, please contact us with your order reference so we can confirm it for you.",prHelp(orderId)+'<a class="btn line" href="#/shop">Continue shopping</a>');return}
+  var piId=store(true,"sparkles_pending_pi"),tries=0,max=12;
+  function check(){
+    tries++;
+    postSheetJSON({type:"payment_status",paymentIntentId:piId}).then(function(res){
+      var st=res&&res.ok?res.status:null;
+      if(st==="completed"){prSet("Finishing your order…","Payment received, thank you. Saving your order now.","");sendOrQueue(orderSheetPayload(pending)).then(function(sent){store(false,"sparkles_pending_order",null);store(false,"sparkles_pending_pi",null);finalizeOrder(pending,sent)})}
+      else if(st==="failed"||st==="canceled"){prSet("Payment was not completed","You have not been charged. Your items are still in your cart. You can try again or choose cash on delivery.",'<a class="btn" href="#/checkout">Back to checkout</a>')}
+      else if(tries<max)setTimeout(check,2500);
+      else prSet("Still confirming your payment","This is taking longer than usual. If money left your account, please contact us with your order reference.",prHelp(orderId)+'<a class="btn line" href="#/shop">Continue shopping</a>');
+    }).catch(function(){if(tries<max)setTimeout(check,2500);else prSet("We could not confirm your payment","Please check your connection, or contact us with your order reference.",prHelp(orderId)+'<a class="btn line" href="#/shop">Continue shopping</a>')});
+  }
+  check();
+}
+/* ---------- router ---------- */
+function route(){
+  var h=(location.hash||"#/").replace(/^#\/?/,""),qs="",qi=h.indexOf("?");if(qi>-1){qs=h.slice(qi+1);h=h.slice(0,qi)}
+  var parts=h.split("/"),name=parts[0]||"home",arg=parts[1];
+  var fn=pages[name];if(!fn||name==="notfound"||(name==="piece"&&!arg)){fn=pages.notfound;name="notfound"}
+  var pg=fn(arg,qs);if(!pg)return;
+  $("#main").innerHTML=pg.html;document.title=pg.title;
+  $$(".menu a").forEach(function(a){var nm=name==="piece"?"shop":name;a.dataset.nav===nm?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current")});
+  window.scrollTo(0,0);$("#toast").classList.remove("show");
+  $("#menu").classList.remove("open");$("#burger").setAttribute("aria-expanded","false");
+  if(pg.init)pg.init();
+}
+window.addEventListener("hashchange",route);
+$("#main").addEventListener("click",function(e){
+  var q=e.target.closest("[data-cq]"),r=e.target.closest("[data-rm]");
+  if(q){var i=+q.dataset.cq,l=cart[i],cap=Math.max(1,maxQty(l.id,i)),want=l.qty+Number(q.dataset.d),hit=want>cap;l.qty=Math.max(1,Math.min(cap,want));saveCart();route();if(hit)toast("Only "+esc(String(byId(l.id).stock))+" available of "+esc(byId(l.id).name)+".")}
+  if(r){cart.splice(+r.dataset.rm,1);saveCart();route()}
+});
+$("#burger").addEventListener("click",function(){var o=$("#menu").classList.toggle("open");this.setAttribute("aria-expanded",o);this.setAttribute("aria-label",o?"Close menu":"Open menu")});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){$("#menu").classList.remove("open");$("#burger").setAttribute("aria-expanded","false")}});
+cart=cart.filter(function(l){return byId(l.id)&&l.qty>0});cart.forEach(function(l,i){var c=maxQty(l.id,i);if(c>0&&l.qty>c)l.qty=c});
+renderFooter();updateBadge();route();flushQueue();
+})();
+</script>
+<script>window.addEventListener("scroll",function(){var n=document.querySelector(".nav");if(n)n.classList.toggle("scrolled",window.scrollY>30)},{passive:true});</script>
+<script type="module">
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches,D=document,H=D.documentElement;
+let lenis=null,ready=false;const q=[];
+const whenReady=f=>ready?f():q.push(f);
+const rl=D.getElementById("rl");
+function finish(){if(ready)return;ready=true;rl&&rl.classList.add("out");H.classList.add("m-ready");D.querySelector(".nav")?.classList.add("m-nav");q.splice(0).forEach(f=>f());setTimeout(()=>rl&&rl.remove(),reduce?0:870)}
+try{
+H.classList.add("m-on");
+history.scrollRestoration="manual";scrollTo(0,0);
+try{const {default:Lenis}=await import("https://cdn.jsdelivr.net/npm/lenis@1.1.18/+esm");
+ if(!reduce){lenis=new Lenis({smoothWheel:true,prevent:n=>n.closest&&n.closest("[role=dialog],.drawer,.modal,#menu.open")});
+ const raf=t=>{lenis.raf(t);requestAnimationFrame(raf)};requestAnimationFrame(raf);lenis.stop()}}catch(e){}
+const MIN=reduce?200:1400,MAX=2600;let started=false;
+const start=()=>{if(started)return;started=true;setTimeout(done,MIN)};
+function done(){lenis&&lenis.start();finish()}
+requestAnimationFrame(()=>requestAnimationFrame(()=>rl&&rl.classList.add("go")));
+if(D.readyState==="complete")start();else addEventListener("load",start);setTimeout(start,MAX);
+if(reduce&&rl){rl.style.display="none"}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);
+ const el=e.target;whenReady(()=>{el.classList.add("m-in");
+  if(el.classList.contains("m-r"))setTimeout(()=>el.classList.remove("m-r","m-in"),2600+(parseInt(el.style.getPropertyValue("--d"))||0))})}),{threshold:.12,rootMargin:"0px 0px -6% 0px"});
+function splitNode(parent,n,ctr){
+ if(n.nodeType===3){n.textContent.split(/(\s+)/).forEach(w=>{if(!w)return;if(/^\s+$/.test(w)){parent.append(w);return}
+  const m=D.createElement("span");m.className="m-w";const s=D.createElement("span");s.textContent=w;s.style.setProperty("--i",ctr.i++);m.append(s);parent.append(m)})}
+ else if(n.nodeType===1){const c=n.cloneNode(false);n.childNodes.forEach(k=>splitNode(c,k,ctr));parent.append(c)}}
+function split(el){if(el.dataset.mw)return;el.dataset.mw=1;const txt=el.textContent.trim();el.setAttribute("aria-label",txt);
+ const f=D.createDocumentFragment(),ctr={i:0};el.childNodes.forEach(n=>splitNode(f,n,ctr));el.textContent="";el.append(f);return 1}
+const WORDS=".hero h1,.page-head h1,.sec-head h2,.story h2,.empty h1";
+const RISE=".hcopy .eyebrow,.hcopy p,.hcopy .btn,.sec-head p,.sec-head>.btn,.page-head p,.crumbs,.trust li,.cat,.cards>.card,.story p,.steps>*,footer .wrap>*,.summary,.empty p,.empty .btn";
+function enhance(root){
+ root.querySelectorAll(WORDS).forEach(h=>{if(split(h)){h.style.setProperty("--d",(h.closest(".hero")?250:0)+"ms");io.observe(h)}});
+ const seen=new Map();
+ root.querySelectorAll(RISE).forEach(el=>{if(el.dataset.mr)return;el.dataset.mr=1;
+  const p=el.parentElement,i=seen.get(p)||0;seen.set(p,i+1);
+  const hero=el.closest(".hcopy");el.style.setProperty("--d",(hero?500+i*140:Math.min(i,5)*90)+"ms");
+  el.classList.add("m-r");io.observe(el)});
+ root.querySelectorAll(".btn").forEach(b=>{if(b.dataset.ar)return;b.dataset.ar=1;const t=b.lastChild;
+  if(t&&t.nodeType===3&&/(→|\u2192)\s*$/.test(t.textContent)){const s=D.createElement("span");s.className="arw";s.textContent="→";t.textContent=t.textContent.replace(/\s*(→)\s*$/,"")+" ";b.append(s)}});
+ root.querySelectorAll(".hero-media").forEach(m=>{if(m.dataset.ld)return;m.dataset.ld=1;const u=(getComputedStyle(m).backgroundImage.match(/url\(["']?(.*?)["']?\)/)||[])[1];
+  const go=()=>m.classList.add("ready");if(!u){go();return}const im=new Image();im.onload=im.onerror=go;im.src=u;setTimeout(go,3000)});
+ const sc=root.querySelector&&root.querySelector("#scrollCue");
+ if(sc&&!sc.dataset.b){sc.dataset.b=1;sc.addEventListener("click",()=>{const h=D.querySelector(".hero"),y=h.offsetTop+h.offsetHeight;lenis?lenis.scrollTo(y):scrollTo({top:y,behavior:"smooth"})})}}
+let px=[];const pick=()=>{px=[...D.querySelectorAll(".hero-media,.story-media")]};
+function tick(){px.forEach(el=>{const sec=el.parentElement,r=sec.getBoundingClientRect(),vh=innerHeight;
+ if(r.bottom<0||r.top>vh)return;const p=Math.min(1,Math.max(0,(vh-r.top)/(vh+r.height)));
+ el.style.scale="1.14";el.style.translate="0 "+((p-.3)*9).toFixed(2)+"%"})}
+if(!reduce)(function loop(){tick();requestAnimationFrame(loop)})();
+const main=D.getElementById("main"),ft=D.getElementById("footer");
+new MutationObserver(()=>{enhance(main);pick()}).observe(main,{childList:true});
+new MutationObserver(()=>enhance(ft)).observe(ft,{childList:true});
+addEventListener("hashchange",()=>{lenis?lenis.scrollTo(0,{immediate:true}):0});
+enhance(D);pick();
+}catch(err){H.classList.remove("m-on");finish()}
+setTimeout(()=>{if(!ready)finish()},6000);
+</script>
+
+<script>
+/* Lumora template: loader counter + liquid cursor reveal (plain JS, no libraries) */
+(function(){
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(reduce)return;
+
+  /* loader counter 000 -> 100, easeInOutCubic over 1300ms */
+  var cEl=document.getElementById("rlc");
+  if(cEl){var t0=0,FILL=1300;requestAnimationFrame(function f(ts){if(!t0)t0=ts;var t=Math.min((ts-t0)/FILL,1),e=t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;cEl.textContent=String(Math.round(e*100)).padStart(3,"0");if(t<1)requestAnimationFrame(f)})}
+
+
+  /* ---- scroll layer ---- */
+  var H=document.documentElement;
+  // 2) springy reveals for sections that had none
+  var SR=".story,.trust,.pdp>*,.ccard,.box,.cols2>*,.grid2>form,.prose h2,.film,.fgrid>*";
+  var sio=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;sio.unobserve(e.target);var el=e.target;
+    var go=function(){el.classList.add("lv-in");setTimeout(function(){el.classList.remove("lv","lv-in");el.style.removeProperty("--sd")},2600)};
+    if(H.classList.contains("m-ready"))go();else{var t=setInterval(function(){if(H.classList.contains("m-ready")){clearInterval(t);go()}},100)}
+  })},{threshold:.1,rootMargin:"0px 0px -6% 0px"});
+  function srScan(){
+    var seen=new Map();
+    document.querySelectorAll(SR).forEach(function(el){
+      if(el.dataset.lv||el.classList.contains("m-r"))return;el.dataset.lv=1;
+      var p=el.parentElement,i=seen.get(p)||0;seen.set(p,i+1);
+      el.style.setProperty("--sd",Math.min(i,4)*90+"ms");
+      el.classList.add("lv");sio.observe(el);
+    });
+  }
+  var mainEl=document.getElementById("main"),ftEl=document.getElementById("footer");
+  if(mainEl)new MutationObserver(srScan).observe(mainEl,{childList:true});
+  if(ftEl)new MutationObserver(srScan).observe(ftEl,{childList:true});
+  srScan();
+  // 3) hero drifts up and fades as you scroll away
+  (function loop(){
+    var h=document.querySelector(".hero");
+    if(h){var r=h.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/Math.max(1,r.height))).toFixed(3);
+      if(h.__p!==p){h.__p=p;h.style.setProperty("--wp",p);
+      var c=h.querySelector(".hcopy");if(c){c.style.translate="0 "+(p*70).toFixed(1)+"px";c.style.opacity=Math.max(0,1-p*1.1).toFixed(3)}}}
+    requestAnimationFrame(loop);
+  })();
+
+  /* liquid reveal: moving the pointer paints a soft brush trail that clears the cream veil on the hero photo */
+  var BRUSH=143,DECAY=.016,MAXIDLE=120,insts=[];
+  function mount(media){
+    if(media.dataset.lq)return;
+    var m=(getComputedStyle(media).backgroundImage||"").match(/url\(["']?(.*?)["']?\)/);
+    if(!m)return;
+    media.dataset.lq=1;
+    var cv=document.createElement("canvas");cv.className="lq";cv.setAttribute("aria-hidden","true");media.appendChild(cv);
+    var ctx=cv.getContext("2d"),cover=document.createElement("canvas"),cctx=cover.getContext("2d"),brush=document.createElement("canvas"),bctx=brush.getContext("2d");
+    var img=new Image(),loaded=false,dpr=Math.min(window.devicePixelRatio||1,2),radius=BRUSH*dpr,W=1,H=1,pts=[],last=null,idle=MAXIDLE+1,raf=0,dead=false;
+    function paintCover(){
+      if(!loaded)return;
+      cctx.clearRect(0,0,W,H);
+      var s=Math.max(W/img.naturalWidth,H/img.naturalHeight),dw=img.naturalWidth*s,dh=img.naturalHeight*s;
+      try{cctx.filter="saturate(1.2) contrast(1.06)"}catch(e){}
+      cctx.drawImage(img,(W-dw)/2,(H-dh)/2,dw,dh);
+      try{cctx.filter="none"}catch(e){}
+    }
+    function size(){
+      W=Math.max(1,Math.round(media.offsetWidth*dpr));H=Math.max(1,Math.round(media.offsetHeight*dpr));
+      cv.width=cover.width=W;cv.height=cover.height=H;
+      brush.width=brush.height=Math.ceil(radius*2);
+      paintCover();
+    }
+    function stamp(p){
+      var d=brush.width,c=d/2;
+      bctx.globalCompositeOperation="source-over";bctx.clearRect(0,0,d,d);
+      var g=bctx.createRadialGradient(c,c,0,c,c,c);
+      g.addColorStop(0,"rgba(255,255,255,1)");g.addColorStop(.55,"rgba(255,255,255,.82)");g.addColorStop(1,"rgba(255,255,255,0)");
+      bctx.fillStyle=g;bctx.fillRect(0,0,d,d);
+      bctx.globalCompositeOperation="source-in";
+      bctx.drawImage(cover,p.x-c,p.y-c,d,d,0,0,d,d);
+      ctx.globalCompositeOperation="source-over";
+      ctx.drawImage(brush,p.x-c,p.y-c);
+    }
+    function tick(){
+      raf=0;if(dead)return;
+      var drawing=pts.length>0;
+      if(drawing)idle=0;else{idle++;if(idle>MAXIDLE)return}
+      var fade=drawing?DECAY:Math.min(DECAY+idle*.004,.5);
+      ctx.globalCompositeOperation="destination-out";ctx.fillStyle="rgba(0,0,0,"+fade+")";ctx.fillRect(0,0,W,H);
+      if(drawing){for(var i=0;i<pts.length;i++)stamp(pts[i]);pts.length=0}
+      else if(idle===MAXIDLE){ctx.clearRect(0,0,W,H)}
+      raf=requestAnimationFrame(tick);
+    }
+    function onMove(e){
+      if(!loaded)return;
+      var r=cv.getBoundingClientRect();if(!r.width||!r.height)return;
+      var x=(e.clientX-r.left)*W/r.width,y=(e.clientY-r.top)*H/r.height;
+      if(x<-radius||y<-radius||x>W+radius||y>H+radius){last=null;return}
+      if(last){
+        var dx=x-last.x,dy=y-last.y,dist=Math.hypot(dx,dy),step=Math.max(radius*.3,1),n=Math.min(Math.ceil(dist/step),60);
+        for(var i=1;i<=n;i++)pts.push({x:last.x+dx*i/n,y:last.y+dy*i/n});
+      }else pts.push({x:x,y:y});
+      last={x:x,y:y};
+      if(!raf)raf=requestAnimationFrame(tick);
+    }
+    img.onload=function(){loaded=true;size()};
+    img.src=m[1];
+    var ro=window.ResizeObserver?new ResizeObserver(size):null;if(ro)ro.observe(media);
+    addEventListener("pointermove",onMove,{passive:true});
+    insts.push({media:media,destroy:function(){dead=true;if(raf)cancelAnimationFrame(raf);removeEventListener("pointermove",onMove);if(ro)ro.disconnect()}});
+  }
+  function scan(){
+    insts=insts.filter(function(i){if(i.media.isConnected)return true;i.destroy();return false});
+    document.querySelectorAll(".hero > .hero-media").forEach(mount);
+  }
+  var main=document.getElementById("main");
+  if(main)new MutationObserver(scan).observe(main,{childList:true});
+  scan();
+})();
+</script>
+
+<script>
+/* Built-in smooth wheel scrolling (no library). Stays idle whenever Lenis is running. */
+(function(){
+  var H=document.documentElement,tgt=0,cur=0,raf=0,ours=null,last=0,on=false;
+  var EASE=0.1;
+  function max(){return Math.max(0,H.scrollHeight-innerHeight)}
+  function lenisOn(){return H.classList.contains("lenis")}
+  function scrollable(el){
+    while(el&&el!==document.body&&el!==H){
+      var cs=getComputedStyle(el),oy=cs.overflowY;
+      if((oy==="auto"||oy==="scroll")&&el.scrollHeight>el.clientHeight+1)return true;
+      el=el.parentElement;
+    }
+    return false;
+  }
+  function frame(ts){
+    raf=0;
+    if(lenisOn()){on=false;return}
+    var dt=Math.min(64,ts-(last||ts));last=ts;
+    var k=1-Math.pow(1-EASE,dt/16.667);
+    cur+=(tgt-cur)*k;
+    if(Math.abs(tgt-cur)<.4)cur=tgt;
+    ours=Math.round(cur);scrollTo(0,cur);
+    if(cur!==tgt)raf=requestAnimationFrame(frame);else last=0;
+  }
+  function onWheel(e){
+    if(e.defaultPrevented||e.ctrlKey||lenisOn())return;
+    if(Math.abs(e.deltaX)>Math.abs(e.deltaY))return;
+    var t=e.target;
+    if(t.closest&&t.closest("textarea,select,[role=dialog]"))return;
+    if(scrollable(t))return;
+    if(!on){cur=tgt=scrollY;on=true}
+    var d=e.deltaMode===1?e.deltaY*34:e.deltaMode===2?e.deltaY*innerHeight:e.deltaY;
+    tgt=Math.min(max(),Math.max(0,tgt+d));
+    e.preventDefault();
+    if(!raf)raf=requestAnimationFrame(frame);
+  }
+  /* keep in sync when something else moves the page (keyboard, scrollbar drag, links, router) */
+  addEventListener("scroll",function(){
+    if(ours!==null&&Math.abs(scrollY-ours)<=2)return;
+    if(!raf){cur=tgt=scrollY}
+  },{passive:true});
+  addEventListener("hashchange",function(){setTimeout(function(){cur=tgt=scrollY},60)});
+  addEventListener("resize",function(){tgt=Math.min(tgt,max())});
+  addEventListener("wheel",onWheel,{passive:false});
+})();
+</script>
+</body>
+</html>
