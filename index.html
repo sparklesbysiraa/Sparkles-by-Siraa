@@ -517,6 +517,23 @@ footer{background:#E8DFD0}
 /* category line, then occasion line under one heading */
 .cats-next{margin-top:12px}
 @media(max-width:560px){.cats-next{margin-top:8px}}
+/* Launch offer popup */
+.offer-pop{position:fixed;inset:0;z-index:400;display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(52,55,45,.6);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s ease;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.offer-pop.on{opacity:1;visibility:visible}
+.offer-card{position:relative;box-sizing:border-box;width:100%;max-width:440px;margin:auto;text-align:center;background:var(--ivory);color:var(--ink);border:1px solid var(--gold);padding:clamp(34px,6vw,48px) clamp(22px,5vw,40px) clamp(26px,5vw,38px);box-shadow:0 24px 70px rgba(52,55,45,.35);transform:translateY(24px) scale(.97);transition:transform .4s ease}
+.offer-card::before{content:"";position:absolute;inset:8px;border:1px solid var(--line);pointer-events:none}
+.offer-pop.on .offer-card{transform:none}
+.offer-x{position:absolute;top:8px;right:8px;z-index:2;width:44px;height:44px;display:grid;place-items:center;padding:0;border:0;background:transparent;color:var(--emerald);font-size:30px;line-height:1;cursor:pointer}
+.offer-x:hover{color:var(--ink)}
+.offer-card .kick{display:block;font-size:12px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:6px}
+.offer-card .big{font-family:var(--serif);font-weight:600;font-size:clamp(68px,20vw,104px);line-height:1;color:var(--emerald);margin:0 0 14px;display:flex;align-items:baseline;justify-content:center;gap:10px}
+.offer-card .big small{font-family:var(--sans);font-size:clamp(15px,4vw,19px);font-weight:500;letter-spacing:.22em;text-transform:uppercase}
+.offer-card p{margin:0 0 10px;font-size:clamp(14.5px,3.8vw,16px);line-height:1.6;color:var(--ink)}
+.offer-card .until{font-size:13px;color:var(--mute);margin-bottom:20px}
+.offer-card .btn{width:100%;max-width:280px;padding:15px 20px}
+@media(max-width:380px){.offer-card{padding:32px 16px 24px}.offer-card .btn{letter-spacing:.1em}}
+@media(max-height:520px) and (orientation:landscape){.offer-pop{align-items:flex-start}.offer-card{padding:28px 24px 20px}.offer-card .big{font-size:56px;margin-bottom:8px}.offer-card .until{margin-bottom:12px}}
+@media(prefers-reduced-motion:reduce){.offer-pop,.offer-card{transition:none}}
 </style>
 </head>
 <body>
@@ -541,7 +558,7 @@ var CONFIG = {
   whatsapp: "971588373604",
   phoneDisplay: "+971 58 837 3604",
   email: "sparklesbysiraa@gmail.com",
-  instagram: "sparkles_abayass",
+  instagram: "sparklebysiraa",
   lowStock: 3,
   hours: "Daily, 8:00 AM – 10:00 PM",
   deliveryDays: "7–10 working days",
@@ -2034,7 +2051,7 @@ setTimeout(()=>{if(!ready)finish()},6000);
 })();
 </script>
 <script>
-/* Launch offer popup: opens 8 seconds after the site loads (once per visit) */
+/* Launch offer popup: opens 5 seconds after the site loads (once per visit) */
 (function(){
   if(typeof offerActive!=="function"||!offerActive())return;
   var o=CONFIG.offer;
@@ -2060,7 +2077,7 @@ setTimeout(()=>{if(!ready)finish()},6000);
     document.body.appendChild(pop);
     requestAnimationFrame(function(){pop.classList.add("on");var b=pop.querySelector(".btn");if(b)b.focus()});
     document.addEventListener("keydown",key);
-  },8000);
+  },5000);
   pop.addEventListener("click",function(e){if(e.target===pop||e.target.closest(".offer-x")||e.target.closest(".btn"))close()});
 })();
 </script>
